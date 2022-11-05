@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0926C24629141E5E00A13597 /* GameSetting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0926C24529141E5E00A13597 /* GameSetting.storyboard */; };
 		098EA1062913CCA400841334 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098EA1052913CCA400841334 /* AppDelegate.swift */; };
 		098EA1082913CCA400841334 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098EA1072913CCA400841334 /* SceneDelegate.swift */; };
 		098EA10A2913CCA400841334 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098EA1092913CCA400841334 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0926C24529141E5E00A13597 /* GameSetting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GameSetting.storyboard; sourceTree = "<group>"; };
 		098EA1022913CCA400841334 /* top-flop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "top-flop.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		098EA1052913CCA400841334 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		098EA1072913CCA400841334 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +39,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0926C24429141D9500A13597 /* GameSetting */ = {
+			isa = PBXGroup;
+			children = (
+				0926C24529141E5E00A13597 /* GameSetting.storyboard */,
+			);
+			path = GameSetting;
+			sourceTree = "<group>";
+		};
 		098EA0F92913CCA400841334 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +66,7 @@
 		098EA1042913CCA400841334 /* top-flop */ = {
 			isa = PBXGroup;
 			children = (
+				0926C24429141D9500A13597 /* GameSetting */,
 				098EA1052913CCA400841334 /* AppDelegate.swift */,
 				098EA1072913CCA400841334 /* SceneDelegate.swift */,
 				098EA1092913CCA400841334 /* ViewController.swift */,
@@ -126,6 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				098EA1122913CCA500841334 /* LaunchScreen.storyboard in Resources */,
+				0926C24629141E5E00A13597 /* GameSetting.storyboard in Resources */,
 				098EA10F2913CCA500841334 /* Assets.xcassets in Resources */,
 				098EA10D2913CCA400841334 /* Main.storyboard in Resources */,
 			);
