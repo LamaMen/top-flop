@@ -18,6 +18,7 @@ class ChooseQuestionViewController: UIViewController {
         collectionView.dataSource = self
         collectionView.delegate = self
         collectionView.collectionViewLayout = UICollectionViewFlowLayout()
+        collectionView.backgroundColor = UIColor.clear
         // Do any additional setup after loading the view.
     }
 
@@ -39,5 +40,20 @@ extension ChooseQuestionViewController: UICollectionViewDelegateFlowLayout {
         var height = (collectionView.frame.size.height - 10) / 2
 
         return CGSize(width: width, height: height)
+    }
+}
+extension ChooseQuestionViewController: UICollectionViewDelegate
+{
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let alert = UIAlertController(title: "Текст вопроса", message: questions[indexPath.row], preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Начать игру", style: .default, handler: nil)) // MARK ЗДЕСЬ ДОБАВИТЬ ПЕРЕХОД НА СТРАНИЦУ РАУНДА!
+        self.present(alert, animated: true) {
+                let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.dismissAlertController))
+                alert.view.superview?.subviews[0].addGestureRecognizer(tapGesture)
+        }
+        
+    }
+    @objc func dismissAlertController(){
+        self.dismiss(animated: true, completion: nil)
     }
 }
