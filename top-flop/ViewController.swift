@@ -11,9 +11,8 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        let storyboard = UIStoryboard(name: "ChooseQuestion", bundle: nil)
+        let vc = storyboard.instantiateViewController(identifier: "ChooseQuestion")
+        self.navigationController?.setViewControllers([vc], animated: false)
     }
-
-
 }
-
