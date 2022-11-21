@@ -46,7 +46,11 @@ extension ChooseQuestionViewController: UICollectionViewDelegate
 {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let alert = UIAlertController(title: "Текст вопроса", message: questions[indexPath.row], preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Начать игру", style: .default, handler: nil)) // MARK ЗДЕСЬ ДОБАВИТЬ ПЕРЕХОД НА СТРАНИЦУ РАУНДА!
+        alert.addAction(UIAlertAction(title: "Начать игру", style: .default){_ in
+            let storyboard = UIStoryboard(name: "FinishScore", bundle: nil)
+            let vc = storyboard.instantiateViewController(identifier: "FinishScore")
+            self.navigationController?.pushViewController(vc, animated: false)
+        }) // MARK ЗДЕСЬ ДОБАВИТЬ ПЕРЕХОД НА СТРАНИЦУ РАУНДА!
         self.present(alert, animated: true) {
                 let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.dismissAlertController))
                 alert.view.superview?.subviews[0].addGestureRecognizer(tapGesture)
