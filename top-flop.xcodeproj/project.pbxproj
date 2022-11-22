@@ -16,6 +16,8 @@
 		098EA10D2913CCA400841334 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 098EA10B2913CCA400841334 /* Main.storyboard */; };
 		098EA10F2913CCA500841334 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 098EA10E2913CCA500841334 /* Assets.xcassets */; };
 		098EA1122913CCA500841334 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 098EA1102913CCA500841334 /* LaunchScreen.storyboard */; };
+		09C3DDE0292CDC1F00E37626 /* EndGame.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09C3DDDF292CDC1F00E37626 /* EndGame.storyboard */; };
+		09C3DDE2292CDC3B00E37626 /* EndGameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C3DDE1292CDC3B00E37626 /* EndGameController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		098EA10E2913CCA500841334 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		098EA1112913CCA500841334 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		098EA1132913CCA500841334 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09C3DDDF292CDC1F00E37626 /* EndGame.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EndGame.storyboard; sourceTree = "<group>"; };
+		09C3DDE1292CDC3B00E37626 /* EndGameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndGameController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,7 @@
 		098EA1042913CCA400841334 /* top-flop */ = {
 			isa = PBXGroup;
 			children = (
+				09C3DDDE292CDBEC00E37626 /* EndGame */,
 				092D363F29266A5200AFED17 /* Pictures */,
 				092D363C29265DBD00AFED17 /* Application */,
 				092D363D29265DDB00AFED17 /* Main */,
@@ -106,6 +111,15 @@
 				098EA1132913CCA500841334 /* Info.plist */,
 			);
 			path = "top-flop";
+			sourceTree = "<group>";
+		};
+		09C3DDDE292CDBEC00E37626 /* EndGame */ = {
+			isa = PBXGroup;
+			children = (
+				09C3DDDF292CDC1F00E37626 /* EndGame.storyboard */,
+				09C3DDE1292CDC3B00E37626 /* EndGameController.swift */,
+			);
+			path = EndGame;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,6 +180,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09C3DDE0292CDC1F00E37626 /* EndGame.storyboard in Resources */,
 				092D364129266AB800AFED17 /* Безымянный-2 1.png in Resources */,
 				098EA1122913CCA500841334 /* LaunchScreen.storyboard in Resources */,
 				098EA10F2913CCA500841334 /* Assets.xcassets in Resources */,
@@ -181,6 +196,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09C3DDE2292CDC3B00E37626 /* EndGameController.swift in Sources */,
 				092D364329267A3400AFED17 /* SecondViewController.swift in Sources */,
 				098EA10A2913CCA400841334 /* ViewController.swift in Sources */,
 				098EA1062913CCA400841334 /* AppDelegate.swift in Sources */,
