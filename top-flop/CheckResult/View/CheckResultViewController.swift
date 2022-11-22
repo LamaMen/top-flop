@@ -10,14 +10,21 @@ import UIKit
 class CheckResultViewController: UIViewController {
 
     @IBOutlet weak var answersView: UICollectionView!
+    @IBOutlet weak var messageBox: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupViews()
+        
         answersView.dataSource = self
         answersView.delegate = self
         answersView.collectionViewLayout = UICollectionViewFlowLayout()
     }
-
+    
+    private func setupViews() {
+        answersView.backgroundColor = UIColor.clear
+//        messageBox.layer.cornerRadius = 28
+    }
 }
 
 extension CheckResultViewController: UICollectionViewDataSource {
@@ -38,9 +45,7 @@ extension CheckResultViewController: UICollectionViewDelegateFlowLayout {
         
         let width = (answersView.frame.size.width - 20) / 3
         let height = (answersView.frame.size.height - 20) / 3
-        
-//        let width = 400
-//        let height = 400
+
         return CGSize(width: width, height: height)
     }
 }

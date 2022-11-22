@@ -10,12 +10,5 @@ import UIKit
 class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-//        let storyboard = UIStoryboard(name: "CheckResult", bundle: nil)
-//        let vc = storyboard.instantiateViewController(identifier: "CheckResult")
-//        self.navigationController?.setViewControllers([vc], animated: false)
-    }
-    
-    @IBAction func checkNumber() {
-        
     }
 }

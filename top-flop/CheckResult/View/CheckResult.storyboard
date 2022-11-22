@@ -17,8 +17,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SgH-99-iP6" customClass="BackgroundImageView" customModule="top_flop" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                            </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="eAv-Cl-Qbp">
-                                <rect key="frame" x="25" y="144" width="364" height="388"/>
+                                <rect key="frame" x="25" y="100" width="364" height="432"/>
                                 <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="5" minimumInteritemSpacing="5" id="7rK-Dw-AB6">
                                     <size key="itemSize" width="128" height="128"/>
@@ -38,13 +41,13 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CZy-DL-pFf">
-                                                            <rect key="frame" x="60" y="53.5" width="8" height="21"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <nil key="textColor"/>
+                                                            <rect key="frame" x="50.5" y="30.5" width="27" height="67"/>
+                                                            <fontDescription key="fontDescription" name="NotoSansOriya-Bold" family="Noto Sans Oriya" pointSize="48"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
-                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <color key="backgroundColor" systemColor="labelColor"/>
                                                     <constraints>
                                                         <constraint firstItem="CZy-DL-pFf" firstAttribute="centerX" secondItem="XPG-OP-ooO" secondAttribute="centerX" id="NkO-TH-WbV"/>
                                                         <constraint firstItem="CZy-DL-pFf" firstAttribute="centerY" secondItem="XPG-OP-ooO" secondAttribute="centerY" id="wIW-42-nUW"/>
@@ -59,24 +62,66 @@
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <connections>
+                                            <outlet property="container" destination="XPG-OP-ooO" id="I9d-NU-dxc"/>
                                             <outlet property="numberLabel" destination="CZy-DL-pFf" id="LdE-Pg-DIo"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="cat_2.png" translatesAutoresizingMaskIntoConstraints="NO" id="EL8-tR-JAH">
+                                <rect key="frame" x="147" y="543" width="120" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="86X-ZY-hBt"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nVx-rt-DOB" customClass="SmallWhiteView" customModule="top_flop" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="712" width="414" height="150"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ПОПРОБУЙ СНОВА" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fff-hk-JKL">
+                                        <rect key="frame" x="108.5" y="30" width="197" height="28.5"/>
+                                        <fontDescription key="fontDescription" name="NotoSansOriya-Bold" family="Noto Sans Oriya" pointSize="20"/>
+                                        <color key="textColor" red="1" green="0.6588235294117647" blue="0.25490196078431371" alpha="0.89803921568627454" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="У КАКОГО ИГРОКА КАРТА С ЧИСЛОМ 1?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QNc-VE-Mc4">
+                                        <rect key="frame" x="75" y="73.5" width="264" height="45"/>
+                                        <fontDescription key="fontDescription" name="NotoSansOriya-Bold" family="Noto Sans Oriya" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="fff-hk-JKL" firstAttribute="centerX" secondItem="nVx-rt-DOB" secondAttribute="centerX" id="0Tz-gM-gad"/>
+                                    <constraint firstItem="QNc-VE-Mc4" firstAttribute="leading" secondItem="nVx-rt-DOB" secondAttribute="leading" constant="75" id="MOC-Sc-rFh"/>
+                                    <constraint firstItem="fff-hk-JKL" firstAttribute="top" secondItem="nVx-rt-DOB" secondAttribute="top" constant="30" id="aPT-Hs-G1y"/>
+                                    <constraint firstItem="QNc-VE-Mc4" firstAttribute="top" secondItem="fff-hk-JKL" secondAttribute="bottom" constant="15" id="fbV-kS-M1T"/>
+                                    <constraint firstAttribute="trailing" secondItem="QNc-VE-Mc4" secondAttribute="trailing" constant="75" id="hV5-pi-pHw"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.99607843139999996" green="0.35686274509999999" blue="0.56470588239999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="nVx-rt-DOB" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="14z-ag-UZh"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="eAv-Cl-Qbp" secondAttribute="trailing" constant="25" id="7SL-Ad-fQ5"/>
                             <constraint firstItem="eAv-Cl-Qbp" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="56" id="7aU-3L-Jzd"/>
                             <constraint firstItem="eAv-Cl-Qbp" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="25" id="HYn-Ys-Oud"/>
+                            <constraint firstItem="nVx-rt-DOB" firstAttribute="top" secondItem="EL8-tR-JAH" secondAttribute="bottom" constant="-30" id="LJY-Bs-kES"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="eAv-Cl-Qbp" secondAttribute="bottom" constant="330" id="Lb9-jI-cc3"/>
+                            <constraint firstAttribute="bottom" secondItem="SgH-99-iP6" secondAttribute="bottom" id="OuE-ad-RtU"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="SgH-99-iP6" secondAttribute="trailing" id="SWH-wc-j6h"/>
+                            <constraint firstItem="nVx-rt-DOB" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="Tew-7r-A6x"/>
+                            <constraint firstItem="SgH-99-iP6" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="aC3-zk-fdR"/>
+                            <constraint firstItem="SgH-99-iP6" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="bDX-XM-3NT"/>
+                            <constraint firstItem="EL8-tR-JAH" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="hcL-0j-VFb"/>
+                            <constraint firstItem="nVx-rt-DOB" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="zyQ-NA-bzy"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="q3F-N0-ZKj"/>
                     <connections>
                         <outlet property="answersView" destination="eAv-Cl-Qbp" id="bIG-NB-RPs"/>
+                        <outlet property="messageBox" destination="nVx-rt-DOB" id="I68-Jx-WZ3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -86,10 +131,10 @@
         <!--Navigation Controller-->
         <scene sceneID="nZW-5Q-Ey8">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ufu-z2-hpW" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="Ufu-z2-hpW" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="bQv-SX-3pl">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -103,6 +148,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="cat_2.png" width="120" height="201"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -9,16 +9,17 @@ import Foundation
 
 struct Answer {
     let number: String
+    let isSelected: Bool
 }
 
 let answers: [Answer] = [
-    Answer(number: "1"),
-    Answer(number: "2"),
-    Answer(number: "3"),
-//    Answer(number: "4"),
-//    Answer(number: "5"),
-//    Answer(number: "6"),
-//    Answer(number: "7"),
-//    Answer(number: "8"),
-//    Answer(number: "9"),
+    Answer(number: "1", isSelected: true),
+    Answer(number: "2", isSelected: false),
+    Answer(number: "3", isSelected: true),
+    Answer(number: "4", isSelected: false),
+    Answer(number: "5", isSelected: false),
+    Answer(number: "6", isSelected: false),
+    Answer(number: "7", isSelected: true),
+    Answer(number: "8", isSelected: false),
+    Answer(number: "9", isSelected: true),
 ]
