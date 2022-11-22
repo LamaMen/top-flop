@@ -16,12 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Безымянный-2 1.png" translatesAutoresizingMaskIntoConstraints="NO" id="CSl-Td-Teh">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="896" id="Ukc-jI-v7F"/>
-                                    <constraint firstAttribute="width" constant="414" id="cfJ-Fg-YIw"/>
-                                </constraints>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Безымянный-2 1.png" translatesAutoresizingMaskIntoConstraints="NO" id="CSl-Td-Teh">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ТОП" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cXn-nf-IFC">
                                 <rect key="frame" x="32" y="64" width="192" height="78"/>
@@ -106,17 +102,19 @@
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="cXn-nf-IFC" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="AQF-PR-XWC"/>
-                            <constraint firstItem="CSl-Td-Teh" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="BJJ-Wl-JVw"/>
                             <constraint firstItem="98i-Vc-px0" firstAttribute="top" secondItem="jJM-Qj-kos" secondAttribute="bottom" constant="15" id="BXV-2V-KEr"/>
                             <constraint firstItem="jJM-Qj-kos" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" constant="-30" id="EX3-AM-Tud"/>
                             <constraint firstItem="98i-Vc-px0" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" constant="34" id="F33-1a-8Gh"/>
                             <constraint firstItem="jJM-Qj-kos" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="75" id="LLg-j4-tig"/>
                             <constraint firstItem="98i-Vc-px0" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="QDb-Dz-6QE"/>
-                            <constraint firstItem="CSl-Td-Teh" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="Qel-d0-J1Q"/>
+                            <constraint firstItem="CSl-Td-Teh" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="YR1-l2-g5w"/>
+                            <constraint firstAttribute="bottom" secondItem="CSl-Td-Teh" secondAttribute="bottom" id="hbF-Xw-ewS"/>
                             <constraint firstItem="98i-Vc-px0" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="pBo-Fd-waj"/>
+                            <constraint firstItem="CSl-Td-Teh" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="pIp-Cw-4Ag"/>
+                            <constraint firstItem="CSl-Td-Teh" firstAttribute="trailing" secondItem="5EZ-qb-Rvc" secondAttribute="trailing" id="r5d-RT-978"/>
                             <constraint firstItem="cXn-nf-IFC" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="32" id="s25-1L-Hyx"/>
                         </constraints>
                     </view>
@@ -130,9 +128,6 @@
         <image name="Безымянный-2 1.png" width="390" height="844"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>

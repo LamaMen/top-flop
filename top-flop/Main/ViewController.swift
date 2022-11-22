@@ -14,10 +14,10 @@ class ViewController: UIViewController {
     }
 
     @IBAction func checkNumber() {
-//        let stbrd = UIStoryboard(name: "SecondStoryboard", bundle: nil)
-//        let vc = stbrd.instantiateViewController(identifier: "SecondStoryboard")
-        let stbrd = UIStoryboard(name: "EndGame", bundle: nil)
-        let vc = stbrd.instantiateViewController(identifier: "EndGame")
+        let stbrd = UIStoryboard(name: "SecondStoryboard", bundle: nil)
+        let vc = stbrd.instantiateViewController(identifier: "SecondStoryboard")
+//        let stbrd = UIStoryboard(name: "EndGame", bundle: nil)
+//        let vc = stbrd.instantiateViewController(identifier: "EndGame")
         self.navigationController?.pushViewController(vc, animated: false)
     }
 }
