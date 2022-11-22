@@ -11,6 +11,6 @@ class BackgroundImageView: UIImageView {
 
     required init?(coder: NSCoder) {
         super.init(coder: coder)
-        image = UIImage(named: "back.png")
+//        image = UIImage(named: "back.png")
     }
 }
