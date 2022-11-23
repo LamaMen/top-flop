@@ -51,6 +51,9 @@
                                             <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
                                             <color key="baseBackgroundColor" name="PrimaryColor"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="back:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Dy4-cZ-f3D"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ПРАВИЛА ИГРЫ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ciA-Vf-4zb">
                                         <rect key="frame" x="106.5" y="35" width="201" height="34"/>

@@ -36,4 +36,8 @@ class GameSettingController: UIViewController {
         let vc = storyboard.instantiateViewController(identifier: "PlayerNumber")
         self.navigationController?.pushViewController(vc, animated: false)
     }
+    
+    @IBAction func back(_ sender: Any) {
+        self.navigationController?.popViewController(animated: false)
+    }
 }

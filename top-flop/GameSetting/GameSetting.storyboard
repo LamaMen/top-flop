@@ -34,6 +34,9 @@
                                             <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="24"/>
                                             <color key="baseBackgroundColor" name="PrimaryColor"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="back:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="h3Y-8c-p3U"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hl9-Ur-JvM">
                                         <rect key="frame" x="75" y="294" width="225" height="70"/>
