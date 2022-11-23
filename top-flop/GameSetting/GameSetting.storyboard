@@ -48,12 +48,18 @@
                                         </buttonConfiguration>
                                     </button>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="15" minValue="1" maxValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="6gP-da-EEv">
-                                        <rect key="frame" x="28" y="223" width="311.5" height="31"/>
+                                        <rect key="frame" x="28" y="223" width="308" height="31"/>
                                         <color key="tintColor" name="PrimaryColor"/>
+                                        <connections>
+                                            <action selector="lapTimeChange:" destination="Y6W-OH-hqX" eventType="valueChanged" id="Jel-aM-BVc"/>
+                                        </connections>
                                     </slider>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="7" minValue="4" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="xuK-jt-m3i">
-                                        <rect key="frame" x="28" y="89" width="311" height="31"/>
+                                        <rect key="frame" x="28" y="89" width="308" height="31"/>
                                         <color key="tintColor" name="PrimaryColor"/>
+                                        <connections>
+                                            <action selector="gamersCountChange:" destination="Y6W-OH-hqX" eventType="valueChanged" id="gRU-i7-cxS"/>
+                                        </connections>
                                     </slider>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ВРЕМЯ НА РАУНД" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qg1-ox-Ds9">
                                         <rect key="frame" x="30" y="169" width="354" height="29"/>
@@ -67,14 +73,20 @@
                                         <color key="textColor" name="SecondaryColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ytq-2o-gJ0">
-                                        <rect key="frame" x="357" y="89" width="27" height="29"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ytq-2o-gJ0">
+                                        <rect key="frame" x="354" y="89" width="30" height="29"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="D4c-nd-LJe"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yph-kd-RRv">
-                                        <rect key="frame" x="357.5" y="223" width="26.5" height="29"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yph-kd-RRv">
+                                        <rect key="frame" x="354" y="223" width="30" height="29"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="Dgw-8N-57g"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -147,6 +159,12 @@
                             <constraint firstItem="jEp-1x-qva" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="wwd-R2-0dh"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="gamersCountLabel" destination="ytq-2o-gJ0" id="TfC-bb-gMj"/>
+                        <outlet property="gamersCountSlider" destination="xuK-jt-m3i" id="6km-dr-j5i"/>
+                        <outlet property="lapTimeLabel" destination="yph-kd-RRv" id="Zjt-kc-UmM"/>
+                        <outlet property="lapTimeSlider" destination="6gP-da-EEv" id="rnm-Gf-LaW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
