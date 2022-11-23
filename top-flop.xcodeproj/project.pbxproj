@@ -17,6 +17,8 @@
 		098602FC292E624B00164C8D /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098602FB292E624B00164C8D /* TutorialViewController.swift */; };
 		098602FF292E6E6E00164C8D /* RoundEnd.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 098602FE292E6E6E00164C8D /* RoundEnd.storyboard */; };
 		09860301292E6E8900164C8D /* RoundEndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09860300292E6E8900164C8D /* RoundEndViewController.swift */; };
+		09860304292E765F00164C8D /* GameSettingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09860303292E765F00164C8D /* GameSettingController.swift */; };
+		09860306292E768000164C8D /* GameSetting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09860305292E768000164C8D /* GameSetting.storyboard */; };
 		098EA1062913CCA400841334 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098EA1052913CCA400841334 /* AppDelegate.swift */; };
 		098EA1082913CCA400841334 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098EA1072913CCA400841334 /* SceneDelegate.swift */; };
 		098EA10F2913CCA500841334 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 098EA10E2913CCA500841334 /* Assets.xcassets */; };
@@ -40,6 +42,8 @@
 		098602FB292E624B00164C8D /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 		098602FE292E6E6E00164C8D /* RoundEnd.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RoundEnd.storyboard; sourceTree = "<group>"; };
 		09860300292E6E8900164C8D /* RoundEndViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundEndViewController.swift; sourceTree = "<group>"; };
+		09860303292E765F00164C8D /* GameSettingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSettingController.swift; sourceTree = "<group>"; };
+		09860305292E768000164C8D /* GameSetting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GameSetting.storyboard; sourceTree = "<group>"; };
 		098EA1022913CCA400841334 /* top-flop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "top-flop.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		098EA1052913CCA400841334 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		098EA1072913CCA400841334 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -119,6 +123,15 @@
 			path = RoundEnd;
 			sourceTree = "<group>";
 		};
+		09860302292E760900164C8D /* GameSetting */ = {
+			isa = PBXGroup;
+			children = (
+				09860303292E765F00164C8D /* GameSettingController.swift */,
+				09860305292E768000164C8D /* GameSetting.storyboard */,
+			);
+			path = GameSetting;
+			sourceTree = "<group>";
+		};
 		098EA0F92913CCA400841334 = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +151,7 @@
 		098EA1042913CCA400841334 /* top-flop */ = {
 			isa = PBXGroup;
 			children = (
+				09860302292E760900164C8D /* GameSetting */,
 				098602FD292E6E5500164C8D /* RoundEnd */,
 				098602F8292E621000164C8D /* Tutorial */,
 				098602F3292D412B00164C8D /* FinishScore */,
@@ -236,6 +250,7 @@
 				098602F5292D414800164C8D /* FinishScore.storyboard in Resources */,
 				098EA10F2913CCA500841334 /* Assets.xcassets in Resources */,
 				098602FF292E6E6E00164C8D /* RoundEnd.storyboard in Resources */,
+				09860306292E768000164C8D /* GameSetting.storyboard in Resources */,
 				098602FA292E623400164C8D /* Tutorial.storyboard in Resources */,
 				092D36462928061800AFED17 /* CheckResult.storyboard in Resources */,
 			);
@@ -256,6 +271,7 @@
 				09860301292E6E8900164C8D /* RoundEndViewController.swift in Sources */,
 				098EA1062913CCA400841334 /* AppDelegate.swift in Sources */,
 				09C3DDD4292BEAA600E37626 /* SmallWhiteView.swift in Sources */,
+				09860304292E765F00164C8D /* GameSettingController.swift in Sources */,
 				09E8D37D292D3A5300DD70F1 /* QuestionViewCell.swift in Sources */,
 				092D36512928124A00AFED17 /* Answer.swift in Sources */,
 				092D36482928077100AFED17 /* CheckResultViewController.swift in Sources */,
@@ -406,7 +422,7 @@
 				INFOPLIST_FILE = "top-flop/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = CheckResult;
+				INFOPLIST_KEY_UIMainStoryboardFile = GameSetting;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -434,7 +450,7 @@
 				INFOPLIST_FILE = "top-flop/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = CheckResult;
+				INFOPLIST_KEY_UIMainStoryboardFile = GameSetting;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
