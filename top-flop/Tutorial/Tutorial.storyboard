@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tutorial View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="Tutorial" id="Y6W-OH-hqX" customClass="TutorialViewController" customModule="top_flop" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="h8L-z1-2vU">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ТОП" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jYK-Fa-xAR">
+                                <rect key="frame" x="70" y="94" width="140.5" height="90"/>
+                                <fontDescription key="fontDescription" name="NotoSansOriya-Bold" family="Noto Sans Oriya" pointSize="64"/>
+                                <color key="textColor" red="0.99607843139999996" green="0.35686274509999999" blue="0.56470588239999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="5" height="0.0"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ФЛОП" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XCY-HG-1Me">
+                                <rect key="frame" x="143.5" y="164" width="200.5" height="90"/>
+                                <fontDescription key="fontDescription" name="NotoSansOriya-Bold" family="Noto Sans Oriya" pointSize="64"/>
+                                <color key="textColor" red="0.99607843139999996" green="0.35686274509999999" blue="0.56470588239999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="5" height="0.0"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HDr-0N-s1Q">
+                                <rect key="frame" x="0.0" y="284" width="414" height="606"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hK1-nK-nhs">
+                                        <rect key="frame" x="72" y="501" width="270" height="75"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="75" id="K9N-Uw-15a"/>
+                                            <constraint firstAttribute="width" constant="270" id="e6Z-DC-sgU"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="НАЗАД" cornerStyle="medium">
+                                            <fontDescription key="titleFontDescription" name="NotoSansOriya-Bold" family="Noto Sans Oriya" pointSize="24"/>
+                                            <color key="baseBackgroundColor" name="PrimaryColor"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ПРАВИЛА ИГРЫ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ciA-Vf-4zb">
+                                        <rect key="frame" x="106.5" y="35" width="201" height="34"/>
+                                        <fontDescription key="fontDescription" name="NotoSansOriya-Bold" family="Noto Sans Oriya" pointSize="24"/>
+                                        <color key="textColor" red="1" green="0.6588235294" blue="0.25490196079999999" alpha="0.8980392157" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Eup-wv-XGw">
+                                        <rect key="frame" x="10" y="89" width="394" height="392"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <string key="text">Старт игры. Выбирается количество игроков. Выбирается ведущий из игроков без участия телефона. Все оставшиеся игроки передают телефон по кругу, при этом смахивая карточки, на которых написано число, необходимое им для игры в раунде. После того, как все посмотрели свои числа, телефон передаётся ведущему. Он переходит на следующую страницу, где ему предоставляется на выбор.</string>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" name="NotoSansOriya-Bold" family="Noto Sans Oriya" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="hK1-nK-nhs" firstAttribute="centerX" secondItem="HDr-0N-s1Q" secondAttribute="centerX" id="2wB-rh-i1H"/>
+                                    <constraint firstItem="hK1-nK-nhs" firstAttribute="top" secondItem="Eup-wv-XGw" secondAttribute="bottom" constant="20" id="4iV-wB-QQa"/>
+                                    <constraint firstAttribute="trailing" secondItem="Eup-wv-XGw" secondAttribute="trailing" constant="10" id="P4V-dh-erd"/>
+                                    <constraint firstItem="Eup-wv-XGw" firstAttribute="leading" secondItem="HDr-0N-s1Q" secondAttribute="leading" constant="10" id="Rye-OT-5pz"/>
+                                    <constraint firstAttribute="bottom" secondItem="hK1-nK-nhs" secondAttribute="bottom" constant="30" id="Xhq-vx-MAJ"/>
+                                    <constraint firstItem="Eup-wv-XGw" firstAttribute="top" secondItem="ciA-Vf-4zb" secondAttribute="bottom" constant="20" id="fHP-R9-lf1"/>
+                                    <constraint firstItem="ciA-Vf-4zb" firstAttribute="top" secondItem="HDr-0N-s1Q" secondAttribute="top" constant="35" id="nvo-9D-pgK"/>
+                                    <constraint firstItem="ciA-Vf-4zb" firstAttribute="centerX" secondItem="HDr-0N-s1Q" secondAttribute="centerX" id="x6p-wd-1BA"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="28"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="HDr-0N-s1Q" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="1Ra-Eu-NPW"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="XCY-HG-1Me" secondAttribute="trailing" constant="70" id="48X-pw-qXZ"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="HDr-0N-s1Q" secondAttribute="bottom" constant="-28" id="8YA-QD-eq1"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="HDr-0N-s1Q" secondAttribute="trailing" id="GZl-zR-g7x"/>
+                            <constraint firstItem="jYK-Fa-xAR" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="50" id="K2L-hI-rU8"/>
+                            <constraint firstItem="HDr-0N-s1Q" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Qg3-QL-NjA"/>
+                            <constraint firstItem="HDr-0N-s1Q" firstAttribute="top" secondItem="XCY-HG-1Me" secondAttribute="bottom" constant="30" id="kNK-9y-aHi"/>
+                            <constraint firstItem="XCY-HG-1Me" firstAttribute="top" secondItem="jYK-Fa-xAR" secondAttribute="bottom" constant="-20" id="oPu-EK-gnM"/>
+                            <constraint firstItem="jYK-Fa-xAR" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="70" id="vNE-s4-91s"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="56.521739130434788" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Background" width="390" height="844"/>
+        <namedColor name="PrimaryColor">
+            <color red="0.99599999189376831" green="0.35699999332427979" blue="0.56499999761581421" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

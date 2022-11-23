@@ -13,6 +13,10 @@
 		092D36512928124A00AFED17 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092D36502928124A00AFED17 /* Answer.swift */; };
 		098602F5292D414800164C8D /* FinishScore.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 098602F4292D414800164C8D /* FinishScore.storyboard */; };
 		098602F7292D417300164C8D /* FinishScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098602F6292D417300164C8D /* FinishScoreViewController.swift */; };
+		098602FA292E623400164C8D /* Tutorial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 098602F9292E623400164C8D /* Tutorial.storyboard */; };
+		098602FC292E624B00164C8D /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098602FB292E624B00164C8D /* TutorialViewController.swift */; };
+		098602FF292E6E6E00164C8D /* RoundEnd.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 098602FE292E6E6E00164C8D /* RoundEnd.storyboard */; };
+		09860301292E6E8900164C8D /* RoundEndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09860300292E6E8900164C8D /* RoundEndViewController.swift */; };
 		098EA1062913CCA400841334 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098EA1052913CCA400841334 /* AppDelegate.swift */; };
 		098EA1082913CCA400841334 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098EA1072913CCA400841334 /* SceneDelegate.swift */; };
 		098EA10F2913CCA500841334 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 098EA10E2913CCA500841334 /* Assets.xcassets */; };
@@ -32,6 +36,10 @@
 		092D36502928124A00AFED17 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
 		098602F4292D414800164C8D /* FinishScore.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FinishScore.storyboard; sourceTree = "<group>"; };
 		098602F6292D417300164C8D /* FinishScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishScoreViewController.swift; sourceTree = "<group>"; };
+		098602F9292E623400164C8D /* Tutorial.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tutorial.storyboard; sourceTree = "<group>"; };
+		098602FB292E624B00164C8D /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
+		098602FE292E6E6E00164C8D /* RoundEnd.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RoundEnd.storyboard; sourceTree = "<group>"; };
+		09860300292E6E8900164C8D /* RoundEndViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundEndViewController.swift; sourceTree = "<group>"; };
 		098EA1022913CCA400841334 /* top-flop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "top-flop.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		098EA1052913CCA400841334 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		098EA1072913CCA400841334 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +101,24 @@
 			path = FinishScore;
 			sourceTree = "<group>";
 		};
+		098602F8292E621000164C8D /* Tutorial */ = {
+			isa = PBXGroup;
+			children = (
+				098602F9292E623400164C8D /* Tutorial.storyboard */,
+				098602FB292E624B00164C8D /* TutorialViewController.swift */,
+			);
+			path = Tutorial;
+			sourceTree = "<group>";
+		};
+		098602FD292E6E5500164C8D /* RoundEnd */ = {
+			isa = PBXGroup;
+			children = (
+				098602FE292E6E6E00164C8D /* RoundEnd.storyboard */,
+				09860300292E6E8900164C8D /* RoundEndViewController.swift */,
+			);
+			path = RoundEnd;
+			sourceTree = "<group>";
+		};
 		098EA0F92913CCA400841334 = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +138,8 @@
 		098EA1042913CCA400841334 /* top-flop */ = {
 			isa = PBXGroup;
 			children = (
+				098602FD292E6E5500164C8D /* RoundEnd */,
+				098602F8292E621000164C8D /* Tutorial */,
 				098602F3292D412B00164C8D /* FinishScore */,
 				09E8D375292D2B9600DD70F1 /* ChooseQuestion */,
 				09C3DDD2292BEA4E00E37626 /* ViewElements */,
@@ -207,6 +235,8 @@
 				09E8D377292D2BAE00DD70F1 /* ChooseQuestion.storyboard in Resources */,
 				098602F5292D414800164C8D /* FinishScore.storyboard in Resources */,
 				098EA10F2913CCA500841334 /* Assets.xcassets in Resources */,
+				098602FF292E6E6E00164C8D /* RoundEnd.storyboard in Resources */,
+				098602FA292E623400164C8D /* Tutorial.storyboard in Resources */,
 				092D36462928061800AFED17 /* CheckResult.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -223,11 +253,13 @@
 				092D364E2928106B00AFED17 /* AnswerCollectionViewCell.swift in Sources */,
 				09E8D379292D2BC100DD70F1 /* ChooseQuestionViewController.swift in Sources */,
 				09C3DDDD292BFF1300E37626 /* BackgroundImageView.swift in Sources */,
+				09860301292E6E8900164C8D /* RoundEndViewController.swift in Sources */,
 				098EA1062913CCA400841334 /* AppDelegate.swift in Sources */,
 				09C3DDD4292BEAA600E37626 /* SmallWhiteView.swift in Sources */,
 				09E8D37D292D3A5300DD70F1 /* QuestionViewCell.swift in Sources */,
 				092D36512928124A00AFED17 /* Answer.swift in Sources */,
 				092D36482928077100AFED17 /* CheckResultViewController.swift in Sources */,
+				098602FC292E624B00164C8D /* TutorialViewController.swift in Sources */,
 				098EA1082913CCA400841334 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
