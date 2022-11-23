@@ -15,7 +15,15 @@ class StartScreenViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func cardFlip(_ sender: Any) {
-
+    @IBAction func playGame(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "GameSetting", bundle: nil)
+        let vc = storyboard.instantiateViewController(identifier: "GameSetting")
+        self.navigationController?.pushViewController(vc, animated: false)
+    }
+    
+    @IBAction func rules(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Tutorial", bundle: nil)
+        let vc = storyboard.instantiateViewController(identifier: "Tutorial")
+        self.navigationController?.pushViewController(vc, animated: false)
     }
 }

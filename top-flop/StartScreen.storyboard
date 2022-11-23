@@ -36,6 +36,9 @@
                                     <fontDescription key="titleFontDescription" name="NotoSansOriya-Bold" family="Noto Sans Oriya" pointSize="24"/>
                                     <color key="baseBackgroundColor" name="PrimaryColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="rules:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="KnA-5f-cxE"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mSc-za-bVm">
                                 <rect key="frame" x="82" y="557" width="250" height="75"/>
@@ -49,6 +52,9 @@
                                     <fontDescription key="titleFontDescription" name="NotoSansOriya-Bold" family="Noto Sans Oriya" pointSize="24"/>
                                     <color key="baseBackgroundColor" name="PrimaryColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="playGame:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="n3t-Gg-69q"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ТОП" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ych-uy-CJd">
                                 <rect key="frame" x="70" y="288" width="139.5" height="91"/>
