@@ -18,11 +18,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="dSN-8y-Imu">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ObU-CA-Z44">
-                                <rect key="frame" x="0.0" y="477" width="414" height="400"/>
+                                <rect key="frame" x="0.0" y="496" width="414" height="400"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="БАЛЛЫ ЗА РАУНД" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zjM-6P-wtE">
                                         <rect key="frame" x="64.5" y="70" width="285.5" height="38.5"/>
@@ -51,6 +51,9 @@
                                             <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
                                             <color key="baseBackgroundColor" name="PrimaryColor"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="newRound:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="1E5-ai-Ao6"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -70,15 +73,15 @@
                                 <color key="textColor" name="PrimaryColor"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <size key="shadowOffset" width="5" height="0.0"/>
+                                <size key="shadowOffset" width="4" height="0.0"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ТОП" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GaB-x7-6hr">
-                                <rect key="frame" x="70" y="194" width="140.5" height="90"/>
+                                <rect key="frame" x="70" y="194" width="139.5" height="90"/>
                                 <fontDescription key="fontDescription" name="NotoSansOriya-Bold" family="Noto Sans Oriya" pointSize="64"/>
                                 <color key="textColor" name="PrimaryColor"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <size key="shadowOffset" width="5" height="0.0"/>
+                                <size key="shadowOffset" width="4" height="0.0"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
@@ -87,13 +90,13 @@
                             <constraint firstItem="GaB-x7-6hr" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="150" id="0kq-7u-QvK"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ObU-CA-Z44" secondAttribute="trailing" id="3Wf-T8-GVI"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="dSN-8y-Imu" secondAttribute="trailing" id="4HQ-R3-4eS"/>
-                            <constraint firstItem="dSN-8y-Imu" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="EuI-yx-iJu"/>
+                            <constraint firstItem="dSN-8y-Imu" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="EuI-yx-iJu"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="xjQ-DQ-Hpg" secondAttribute="trailing" constant="70" id="GMq-sT-8cr"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="dSN-8y-Imu" secondAttribute="bottom" id="Kuh-3i-mhV"/>
+                            <constraint firstAttribute="bottom" secondItem="dSN-8y-Imu" secondAttribute="bottom" id="Kuh-3i-mhV"/>
                             <constraint firstItem="dSN-8y-Imu" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="SQ4-Tt-Tkg"/>
                             <constraint firstItem="xjQ-DQ-Hpg" firstAttribute="top" secondItem="GaB-x7-6hr" secondAttribute="bottom" constant="-20" id="kAa-gn-iSA"/>
                             <constraint firstItem="ObU-CA-Z44" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="q4x-9D-mwX"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="ObU-CA-Z44" secondAttribute="bottom" constant="-15" id="tBP-3m-xb2"/>
+                            <constraint firstAttribute="bottom" secondItem="ObU-CA-Z44" secondAttribute="bottom" id="tBP-3m-xb2"/>
                             <constraint firstItem="GaB-x7-6hr" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="70" id="tsN-V8-8pb"/>
                         </constraints>
                     </view>

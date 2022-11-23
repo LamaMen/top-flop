@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="Djg-Py-p8f">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="The-yN-2ck">
@@ -33,10 +33,10 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="QuestionViewCell" id="Ws3-SX-D7e" customClass="QuestionViewCell" customModule="top_flop" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="81.5" height="128"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="eNS-8j-5uF">
-                                            <rect key="frame" x="0.0" y="0.0" width="81.5" height="128"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pUo-sc-QiV">
@@ -97,9 +97,9 @@
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="The-yN-2ck" secondAttribute="trailing" constant="10" id="HBb-yS-IPL"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Djg-Py-p8f" secondAttribute="trailing" id="Ka3-se-uSC"/>
                             <constraint firstItem="zMN-oo-dP9" firstAttribute="top" secondItem="The-yN-2ck" secondAttribute="bottom" constant="10" id="PWV-Fq-itC"/>
-                            <constraint firstItem="Djg-Py-p8f" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="Pnf-0y-OgT"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Djg-Py-p8f" secondAttribute="bottom" id="aCC-3O-i5x"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="zMN-oo-dP9" secondAttribute="bottom" constant="-15" id="aXu-jx-gKm"/>
+                            <constraint firstItem="Djg-Py-p8f" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="Pnf-0y-OgT"/>
+                            <constraint firstAttribute="bottom" secondItem="Djg-Py-p8f" secondAttribute="bottom" id="aCC-3O-i5x"/>
+                            <constraint firstAttribute="bottom" secondItem="zMN-oo-dP9" secondAttribute="bottom" id="aXu-jx-gKm"/>
                             <constraint firstItem="The-yN-2ck" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="lwE-uF-fSr"/>
                             <constraint firstItem="zMN-oo-dP9" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="rO3-bq-QyL"/>
                             <constraint firstItem="Djg-Py-p8f" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="wF7-Xz-qHv"/>

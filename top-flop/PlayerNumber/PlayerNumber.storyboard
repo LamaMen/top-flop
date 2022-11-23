@@ -10,13 +10,13 @@
         <!--Player Number Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" customClass="PlayerNumberController" customModule="top_flop" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PlayerNumber" id="Y6W-OH-hqX" customClass="PlayerNumberController" customModule="top_flop" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="jZh-Xi-scd">
-                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="card" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MBY-Oe-PPW">
                                 <rect key="frame" x="40" y="164" width="334" height="598"/>
@@ -35,7 +35,7 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="jZh-Xi-scd" secondAttribute="bottom" id="AVg-Tt-m7q"/>
-                            <constraint firstItem="jZh-Xi-scd" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="LA0-tL-CrF"/>
+                            <constraint firstItem="jZh-Xi-scd" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="LA0-tL-CrF"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="jZh-Xi-scd" secondAttribute="trailing" id="Pfz-2u-Sel"/>
                             <constraint firstItem="MBY-Oe-PPW" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="40" id="V20-XX-h1N"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="MBY-Oe-PPW" secondAttribute="bottom" constant="100" id="W4b-vS-vj5"/>

@@ -16,25 +16,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="h8L-z1-2vU">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="h8L-z1-2vU">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ТОП" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jYK-Fa-xAR">
-                                <rect key="frame" x="70" y="94" width="140.5" height="90"/>
+                                <rect key="frame" x="70" y="94" width="139.5" height="90"/>
                                 <fontDescription key="fontDescription" name="NotoSansOriya-Bold" family="Noto Sans Oriya" pointSize="64"/>
                                 <color key="textColor" red="0.99607843139999996" green="0.35686274509999999" blue="0.56470588239999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <size key="shadowOffset" width="5" height="0.0"/>
+                                <size key="shadowOffset" width="4" height="0.0"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ФЛОП" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XCY-HG-1Me">
-                                <rect key="frame" x="143.5" y="164" width="200.5" height="90"/>
+                                <rect key="frame" x="144.5" y="164" width="199.5" height="90"/>
                                 <fontDescription key="fontDescription" name="NotoSansOriya-Bold" family="Noto Sans Oriya" pointSize="64"/>
                                 <color key="textColor" red="0.99607843139999996" green="0.35686274509999999" blue="0.56470588239999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <size key="shadowOffset" width="5" height="0.0"/>
+                                <size key="shadowOffset" width="4" height="0.0"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HDr-0N-s1Q">
                                 <rect key="frame" x="0.0" y="284" width="414" height="606"/>
@@ -88,11 +87,15 @@
                             <constraint firstItem="HDr-0N-s1Q" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="1Ra-Eu-NPW"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="XCY-HG-1Me" secondAttribute="trailing" constant="70" id="48X-pw-qXZ"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="HDr-0N-s1Q" secondAttribute="bottom" constant="-28" id="8YA-QD-eq1"/>
+                            <constraint firstItem="h8L-z1-2vU" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="9Z6-Ad-omT"/>
+                            <constraint firstItem="h8L-z1-2vU" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Cqm-ZO-Oek"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="HDr-0N-s1Q" secondAttribute="trailing" id="GZl-zR-g7x"/>
                             <constraint firstItem="jYK-Fa-xAR" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="50" id="K2L-hI-rU8"/>
                             <constraint firstItem="HDr-0N-s1Q" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Qg3-QL-NjA"/>
                             <constraint firstItem="HDr-0N-s1Q" firstAttribute="top" secondItem="XCY-HG-1Me" secondAttribute="bottom" constant="30" id="kNK-9y-aHi"/>
+                            <constraint firstItem="h8L-z1-2vU" firstAttribute="bottom" secondItem="5EZ-qb-Rvc" secondAttribute="bottom" id="mnU-nI-83P"/>
                             <constraint firstItem="XCY-HG-1Me" firstAttribute="top" secondItem="jYK-Fa-xAR" secondAttribute="bottom" constant="-20" id="oPu-EK-gnM"/>
+                            <constraint firstItem="h8L-z1-2vU" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="oV6-5p-lRw"/>
                             <constraint firstItem="jYK-Fa-xAR" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="70" id="vNE-s4-91s"/>
                         </constraints>
                     </view>

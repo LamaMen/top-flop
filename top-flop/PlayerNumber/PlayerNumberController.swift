@@ -26,12 +26,16 @@ class PlayerNumberController: UIViewController {
 
     @IBAction func cardFlip(_ sender: Any) {
         if (open) {
-            open = false
+            let storyboard = UIStoryboard(name: "ChooseQuestion", bundle: nil)
+            let vc = storyboard.instantiateViewController(identifier: "ChooseQuestion")
+            self.navigationController?.pushViewController(vc, animated: false)
             
-            card.setTitle("Игрок 1", for: .normal)
-            card.titleLabel?.font = UIFont(name: "Helvetica", size: 50)
-            
-            UIView.transition(with: card, duration: 0.4, options: .transitionFlipFromTop, animations: nil, completion: nil)
+//            open = false
+//
+//            card.setTitle("Игрок 1", for: .normal)
+//            card.titleLabel?.font = UIFont(name: "Helvetica", size: 50)
+//
+//            UIView.transition(with: card, duration: 0.4, options: .transitionFlipFromTop, animations: nil, completion: nil)
         } else {
             open = true
             

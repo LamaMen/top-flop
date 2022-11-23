@@ -49,3 +49,12 @@ extension CheckResultViewController: UICollectionViewDelegateFlowLayout {
         return CGSize(width: width, height: height)
     }
 }
+
+extension CheckResultViewController: UICollectionViewDelegate
+{
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let storyboard = UIStoryboard(name: "FinishScore", bundle: nil)
+        let vc = storyboard.instantiateViewController(identifier: "FinishScore")
+        self.navigationController?.setViewControllers([vc], animated: false)
+    }
+}

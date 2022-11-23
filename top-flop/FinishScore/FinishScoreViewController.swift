@@ -10,26 +10,20 @@ import UIKit
 class FinishScoreViewController: UIViewController {
     
     @IBOutlet weak var message: UIView!
-    
     @IBOutlet weak var score: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+    
         message.heightAnchor.constraint(equalToConstant: 400).isActive = true
         message.layer.cornerRadius = 28
-        let s = "3"
-        score.text = s + "!"
-        // Do any additional setup after loading the view.
+        let s = 3
+        score.text = "\(s)!"
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func newRound(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "PlayerNumber", bundle: nil)
+        let vc = storyboard.instantiateViewController(identifier: "PlayerNumber")
+        self.navigationController?.setViewControllers([vc], animated: false)
     }
-    */
-
 }

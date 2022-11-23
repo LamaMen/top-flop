@@ -10,22 +10,16 @@ import UIKit
 class RoundEndViewController: UIViewController {
 
     @IBOutlet weak var time: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let s = "3:2"
         time.text = s + "1"
-        // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func endRound(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "CheckResult", bundle: nil)
+        let vc = storyboard.instantiateViewController(identifier: "CheckResult")
+        self.navigationController?.setViewControllers([vc], animated: false)
     }
-    */
-
 }
