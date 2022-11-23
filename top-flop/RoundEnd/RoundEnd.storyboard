@@ -77,7 +77,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="time" destination="if7-zi-VdH" id="emb-al-WAE"/>
+                        <outlet property="time" destination="if7-zi-VdH" id="lIx-s4-beY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -8,7 +8,7 @@
 import UIKit
 
 class RoundEndViewController: UIViewController {
-
+    
     @IBOutlet weak var time: UILabel!
     
     override func viewDidLoad() {
