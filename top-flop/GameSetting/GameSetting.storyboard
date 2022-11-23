@@ -47,14 +47,14 @@
                                             <color key="baseBackgroundColor" name="PrimaryColor"/>
                                         </buttonConfiguration>
                                     </button>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="15" minValue="1" maxValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="6gP-da-EEv">
+                                    <slider opaque="NO" contentMode="scaleToFill" restorationIdentifier="lapTimeSlider" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="15" minValue="1" maxValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="6gP-da-EEv">
                                         <rect key="frame" x="28" y="223" width="308" height="31"/>
                                         <color key="tintColor" name="PrimaryColor"/>
                                         <connections>
                                             <action selector="lapTimeChange:" destination="Y6W-OH-hqX" eventType="valueChanged" id="Jel-aM-BVc"/>
                                         </connections>
                                     </slider>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="7" minValue="4" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="xuK-jt-m3i">
+                                    <slider opaque="NO" contentMode="scaleToFill" restorationIdentifier="playersCountSlider" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="7" minValue="4" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="xuK-jt-m3i">
                                         <rect key="frame" x="28" y="89" width="308" height="31"/>
                                         <color key="tintColor" name="PrimaryColor"/>
                                         <connections>
@@ -160,10 +160,10 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="gamersCountLabel" destination="ytq-2o-gJ0" id="TfC-bb-gMj"/>
-                        <outlet property="gamersCountSlider" destination="xuK-jt-m3i" id="6km-dr-j5i"/>
                         <outlet property="lapTimeLabel" destination="yph-kd-RRv" id="Zjt-kc-UmM"/>
                         <outlet property="lapTimeSlider" destination="6gP-da-EEv" id="rnm-Gf-LaW"/>
+                        <outlet property="playersCountLabel" destination="ytq-2o-gJ0" id="TfC-bb-gMj"/>
+                        <outlet property="playersCountSlider" destination="xuK-jt-m3i" id="6km-dr-j5i"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
