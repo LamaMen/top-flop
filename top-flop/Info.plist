@@ -16,7 +16,7 @@
 					<key>UISceneDelegateClassName</key>
 					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
 					<key>UISceneStoryboardFile</key>
-					<string>PlayerNumber</string>
+					<string>GameSetting</string>
 				</dict>
 			</array>
 		</dict>
