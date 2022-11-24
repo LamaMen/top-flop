@@ -20,26 +20,10 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="h8L-z1-2vU">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ТОП" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jYK-Fa-xAR">
-                                <rect key="frame" x="70" y="94" width="139.5" height="90"/>
-                                <fontDescription key="fontDescription" name="NotoSansOriya-Bold" family="Noto Sans Oriya" pointSize="64"/>
-                                <color key="textColor" name="PrimaryColor"/>
-                                <nil key="highlightedColor"/>
-                                <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <size key="shadowOffset" width="4" height="0.0"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ФЛОП" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XCY-HG-1Me">
-                                <rect key="frame" x="144.5" y="164" width="199.5" height="90"/>
-                                <fontDescription key="fontDescription" name="NotoSansOriya-Bold" family="Noto Sans Oriya" pointSize="64"/>
-                                <color key="textColor" name="PrimaryColor"/>
-                                <nil key="highlightedColor"/>
-                                <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <size key="shadowOffset" width="4" height="0.0"/>
-                            </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HDr-0N-s1Q">
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HDr-0N-s1Q">
                                 <rect key="frame" x="0.0" y="284" width="414" height="606"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hK1-nK-nhs">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hK1-nK-nhs">
                                         <rect key="frame" x="72" y="501" width="270" height="75"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="75" id="K9N-Uw-15a"/>
@@ -47,7 +31,7 @@
                                         </constraints>
                                         <color key="tintColor" name="PrimaryColor"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="НАЗАД" cornerStyle="medium">
+                                        <buttonConfiguration key="configuration" style="filled" title="НАЗАД" cornerStyle="small">
                                             <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
                                             <color key="baseBackgroundColor" name="PrimaryColor"/>
                                         </buttonConfiguration>
@@ -61,23 +45,23 @@
                                         <color key="textColor" red="1" green="0.6588235294" blue="0.25490196079999999" alpha="0.8980392157" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Eup-wv-XGw">
-                                        <rect key="frame" x="10" y="89" width="394" height="392"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eup-wv-XGw">
+                                        <rect key="frame" x="30" y="81" width="354" height="390"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <string key="text">Старт игры. Выбирается количество игроков. Выбирается ведущий из игроков без участия телефона. Все оставшиеся игроки передают телефон по кругу, при этом смахивая карточки, на которых написано число, необходимое им для игры в раунде. После того, как все посмотрели свои числа, телефон передаётся ведущему. Он переходит на следующую страницу, где ему предоставляется на выбор.</string>
                                         <color key="textColor" systemColor="labelColor"/>
-                                        <fontDescription key="fontDescription" name="NotoSansOriya-Bold" family="Noto Sans Oriya" pointSize="20"/>
+                                        <fontDescription key="fontDescription" name="NotoSansOriya" family="Noto Sans Oriya" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="hK1-nK-nhs" firstAttribute="centerX" secondItem="HDr-0N-s1Q" secondAttribute="centerX" id="2wB-rh-i1H"/>
-                                    <constraint firstItem="hK1-nK-nhs" firstAttribute="top" secondItem="Eup-wv-XGw" secondAttribute="bottom" constant="20" id="4iV-wB-QQa"/>
-                                    <constraint firstAttribute="trailing" secondItem="Eup-wv-XGw" secondAttribute="trailing" constant="10" id="P4V-dh-erd"/>
-                                    <constraint firstItem="Eup-wv-XGw" firstAttribute="leading" secondItem="HDr-0N-s1Q" secondAttribute="leading" constant="10" id="Rye-OT-5pz"/>
+                                    <constraint firstItem="hK1-nK-nhs" firstAttribute="top" secondItem="Eup-wv-XGw" secondAttribute="bottom" constant="30" id="4iV-wB-QQa"/>
+                                    <constraint firstAttribute="trailing" secondItem="Eup-wv-XGw" secondAttribute="trailing" constant="30" id="P4V-dh-erd"/>
+                                    <constraint firstItem="Eup-wv-XGw" firstAttribute="leading" secondItem="HDr-0N-s1Q" secondAttribute="leading" constant="30" id="Rye-OT-5pz"/>
                                     <constraint firstAttribute="bottom" secondItem="hK1-nK-nhs" secondAttribute="bottom" constant="30" id="Xhq-vx-MAJ"/>
-                                    <constraint firstItem="Eup-wv-XGw" firstAttribute="top" secondItem="ciA-Vf-4zb" secondAttribute="bottom" constant="20" id="fHP-R9-lf1"/>
+                                    <constraint firstItem="Eup-wv-XGw" firstAttribute="top" secondItem="ciA-Vf-4zb" secondAttribute="bottom" constant="12" id="fHP-R9-lf1"/>
                                     <constraint firstItem="ciA-Vf-4zb" firstAttribute="top" secondItem="HDr-0N-s1Q" secondAttribute="top" constant="35" id="nvo-9D-pgK"/>
                                     <constraint firstItem="ciA-Vf-4zb" firstAttribute="centerX" secondItem="HDr-0N-s1Q" secondAttribute="centerX" id="x6p-wd-1BA"/>
                                 </constraints>
@@ -85,23 +69,25 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="28"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w6U-yE-I5H" customClass="TopFlopTitle" customModule="top_flop" customModuleProvider="target">
+                                <rect key="frame" x="65" y="79" width="240" height="128"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="HDr-0N-s1Q" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="1Ra-Eu-NPW"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="XCY-HG-1Me" secondAttribute="trailing" constant="70" id="48X-pw-qXZ"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="HDr-0N-s1Q" secondAttribute="bottom" constant="-28" id="8YA-QD-eq1"/>
                             <constraint firstItem="h8L-z1-2vU" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="9Z6-Ad-omT"/>
                             <constraint firstItem="h8L-z1-2vU" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Cqm-ZO-Oek"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="HDr-0N-s1Q" secondAttribute="trailing" id="GZl-zR-g7x"/>
-                            <constraint firstItem="jYK-Fa-xAR" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="50" id="K2L-hI-rU8"/>
                             <constraint firstItem="HDr-0N-s1Q" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Qg3-QL-NjA"/>
-                            <constraint firstItem="HDr-0N-s1Q" firstAttribute="top" secondItem="XCY-HG-1Me" secondAttribute="bottom" constant="30" id="kNK-9y-aHi"/>
+                            <constraint firstItem="HDr-0N-s1Q" firstAttribute="top" secondItem="w6U-yE-I5H" secondAttribute="bottom" constant="30" id="QpA-l4-niE"/>
+                            <constraint firstItem="w6U-yE-I5H" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="15" id="VVk-be-j7S"/>
+                            <constraint firstItem="w6U-yE-I5H" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="lgw-jd-jyg"/>
                             <constraint firstItem="h8L-z1-2vU" firstAttribute="bottom" secondItem="5EZ-qb-Rvc" secondAttribute="bottom" id="mnU-nI-83P"/>
-                            <constraint firstItem="XCY-HG-1Me" firstAttribute="top" secondItem="jYK-Fa-xAR" secondAttribute="bottom" constant="-20" id="oPu-EK-gnM"/>
                             <constraint firstItem="h8L-z1-2vU" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="oV6-5p-lRw"/>
-                            <constraint firstItem="jYK-Fa-xAR" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="70" id="vNE-s4-91s"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -113,7 +99,7 @@
     <resources>
         <image name="Background" width="390" height="844"/>
         <namedColor name="PrimaryColor">
-            <color red="0.99599999189376831" green="0.35699999332427979" blue="0.56499999761581421" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.95294117647058818" green="0.29411764705882354" blue="0.56470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

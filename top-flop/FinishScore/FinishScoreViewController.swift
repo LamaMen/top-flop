@@ -26,4 +26,10 @@ class FinishScoreViewController: UIViewController {
         let vc = storyboard.instantiateViewController(identifier: "PlayerNumber")
         self.navigationController?.setViewControllers([vc], animated: false)
     }
+    
+    @IBAction func endGame(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "StartScreen", bundle: nil)
+        let vc = storyboard.instantiateViewController(identifier: "StartScreen")
+        self.navigationController?.setViewControllers([vc], animated: false)
+    }
 }

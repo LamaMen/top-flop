@@ -118,7 +118,7 @@
     <resources>
         <image name="Background" width="390" height="844"/>
         <namedColor name="PrimaryColor">
-            <color red="0.99599999189376831" green="0.35699999332427979" blue="0.56499999761581421" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.95294117647058818" green="0.29411764705882354" blue="0.56470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

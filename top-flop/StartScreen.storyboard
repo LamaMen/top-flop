@@ -56,30 +56,36 @@
                                     <action selector="playGame:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="n3t-Gg-69q"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ТОП" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ych-uy-CJd">
-                                <rect key="frame" x="70" y="288" width="139.5" height="91"/>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ТОП" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ych-uy-CJd">
+                                <rect key="frame" x="70" y="288" width="139.5" height="90"/>
                                 <fontDescription key="fontDescription" name="NotoSansOriya-Bold" family="Noto Sans Oriya" pointSize="64"/>
                                 <color key="textColor" name="PrimaryColor"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <size key="shadowOffset" width="4" height="-1"/>
+                                <size key="shadowOffset" width="4" height="0.0"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ФЛОП" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ku8-Wp-Zfo">
-                                <rect key="frame" x="144.5" y="359" width="199.5" height="91"/>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ФЛОП" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ku8-Wp-Zfo">
+                                <rect key="frame" x="144.5" y="358" width="199.5" height="90"/>
                                 <fontDescription key="fontDescription" name="NotoSansOriya-Bold" family="Noto Sans Oriya" pointSize="64"/>
                                 <color key="textColor" name="PrimaryColor"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <size key="shadowOffset" width="4" height="-1"/>
+                                <size key="shadowOffset" width="4" height="0.0"/>
                             </label>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JsW-Dr-0f9" customClass="TopFlopTitle" customModule="top_flop" customModuleProvider="target">
+                                <rect key="frame" x="68" y="288" width="276" height="155"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Y7x-K2-0lL" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="Aph-ny-mKs"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Ku8-Wp-Zfo" secondAttribute="trailing" constant="70" id="BEv-m5-zUa"/>
+                            <constraint firstItem="JsW-Dr-0f9" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="200" id="BoE-Yp-BCm"/>
                             <constraint firstItem="Pts-zP-oQs" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="EC4-WH-AGO"/>
                             <constraint firstItem="Ych-uy-CJd" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="200" id="IEw-KH-Qgk"/>
+                            <constraint firstItem="JsW-Dr-0f9" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="Je9-oA-UL3"/>
                             <constraint firstItem="mSc-za-bVm" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="OVe-jA-Lrz"/>
                             <constraint firstItem="Y7x-K2-0lL" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="RjP-A0-0Sf"/>
                             <constraint firstItem="Ku8-Wp-Zfo" firstAttribute="top" secondItem="Ych-uy-CJd" secondAttribute="bottom" constant="-20" id="kol-Mv-FLZ"/>
@@ -102,6 +108,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="146-aw-p5d">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" name="PrimaryColor"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -116,7 +123,7 @@
     <resources>
         <image name="Background" width="390" height="844"/>
         <namedColor name="PrimaryColor">
-            <color red="0.99599999189376831" green="0.35699999332427979" blue="0.56499999761581421" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.95294117647058818" green="0.29411764705882354" blue="0.56470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

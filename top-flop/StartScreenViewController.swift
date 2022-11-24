@@ -18,6 +18,8 @@ class StartScreenViewController: UIViewController {
     @IBAction func playGame(_ sender: Any) {
         let storyboard = UIStoryboard(name: "GameSetting", bundle: nil)
         let vc = storyboard.instantiateViewController(identifier: "GameSetting")
+//        let storyboard = UIStoryboard(name: "RoundEnd", bundle: nil)
+//        let vc = storyboard.instantiateViewController(identifier: "RoundEnd")
         self.navigationController?.pushViewController(vc, animated: false)
     }
     

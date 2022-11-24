@@ -13,8 +13,15 @@ class RoundEndViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let s = "3:2"
-        time.text = s + "1"
+        
+        let strokeTextAttributes: [NSAttributedString.Key: Any] = [
+            .strokeColor : UIColor(named: "SecondaryColor")!,
+            .foregroundColor : UIColor.black,
+            .strokeWidth : 4.0
+        ]
+        
+        let title = NSAttributedString(string: "3:21", attributes: strokeTextAttributes)
+        time.attributedText = title
     }
     
     @IBAction func endRound(_ sender: Any) {

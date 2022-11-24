@@ -20,25 +20,9 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="xLV-Xc-wh5">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ТОП" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QMr-YE-UjK">
-                                <rect key="frame" x="70" y="194" width="139.5" height="90"/>
-                                <fontDescription key="fontDescription" name="NotoSansOriya-Bold" family="Noto Sans Oriya" pointSize="64"/>
-                                <color key="textColor" red="0.99607843139999996" green="0.35686274509999999" blue="0.56470588239999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                                <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <size key="shadowOffset" width="4" height="0.0"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ФЛОП" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KBo-aB-WfE">
-                                <rect key="frame" x="144.5" y="264" width="199.5" height="90"/>
-                                <fontDescription key="fontDescription" name="NotoSansOriya-Bold" family="Noto Sans Oriya" pointSize="64"/>
-                                <color key="textColor" red="0.99607843139999996" green="0.35686274509999999" blue="0.56470588239999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                                <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <size key="shadowOffset" width="4" height="0.0"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5:21" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="if7-zi-VdH">
-                                <rect key="frame" x="142.5" y="433" width="129.5" height="90"/>
-                                <fontDescription key="fontDescription" name="NotoSansOriya-Bold" family="Noto Sans Oriya" pointSize="64"/>
+                                <rect key="frame" x="126" y="392" width="162" height="112.5"/>
+                                <fontDescription key="fontDescription" name="NotoSansOriya-Bold" family="Noto Sans Oriya" pointSize="80"/>
                                 <color key="textColor" name="SecondaryColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -49,7 +33,7 @@
                                     <constraint firstAttribute="width" constant="270" id="vEz-FG-gTQ"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="ЗАВЕРШИТЬ РАУНД" cornerStyle="medium">
+                                <buttonConfiguration key="configuration" style="filled" title="ЗАВЕРШИТЬ РАУНД" cornerStyle="small">
                                     <fontDescription key="titleFontDescription" name="NotoSansOriya-Bold" family="Noto Sans Oriya" pointSize="20"/>
                                     <attributedString key="attributedSubtitle"/>
                                     <color key="baseBackgroundColor" name="PrimaryColor"/>
@@ -58,22 +42,24 @@
                                     <action selector="endRound:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="nx6-oA-xFZ"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pFK-ZZ-YzQ" customClass="TopFlopTitle" customModule="top_flop" customModuleProvider="target">
+                                <rect key="frame" x="87" y="89" width="240" height="128"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="if7-zi-VdH" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" constant="30" id="1Vd-mb-mSp"/>
+                            <constraint firstItem="if7-zi-VdH" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="1Vd-mb-mSp"/>
+                            <constraint firstItem="pFK-ZZ-YzQ" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="50" id="3oO-OV-QoK"/>
                             <constraint firstItem="if7-zi-VdH" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="4hZ-bI-2C5"/>
                             <constraint firstItem="xLV-Xc-wh5" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="KjM-o0-N7V"/>
                             <constraint firstItem="xLV-Xc-wh5" firstAttribute="bottom" secondItem="5EZ-qb-Rvc" secondAttribute="bottom" id="TVw-4u-eri"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="0In-OO-E41" secondAttribute="bottom" constant="80" id="bY2-Xx-qob"/>
                             <constraint firstItem="0In-OO-E41" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="dUV-wc-phv"/>
-                            <constraint firstItem="QMr-YE-UjK" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="70" id="gIJ-76-DjG"/>
                             <constraint firstItem="xLV-Xc-wh5" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="jp8-JX-oUl"/>
+                            <constraint firstItem="pFK-ZZ-YzQ" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="pHS-Fl-5b0"/>
                             <constraint firstItem="xLV-Xc-wh5" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="qP0-7S-EzT"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="KBo-aB-WfE" secondAttribute="trailing" constant="70" id="qdP-4g-ow5"/>
-                            <constraint firstItem="QMr-YE-UjK" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="150" id="vBo-Fr-Vyp"/>
-                            <constraint firstItem="KBo-aB-WfE" firstAttribute="top" secondItem="QMr-YE-UjK" secondAttribute="bottom" constant="-20" id="y3J-9p-qO3"/>
                         </constraints>
                     </view>
                     <connections>

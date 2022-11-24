@@ -27,6 +27,8 @@
 		098EA1122913CCA500841334 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 098EA1102913CCA500841334 /* LaunchScreen.storyboard */; };
 		0991DDBD292EA0390068F517 /* StartScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0991DDBC292EA0390068F517 /* StartScreen.storyboard */; };
 		0991DDBF292EA0A80068F517 /* StartScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0991DDBE292EA0A80068F517 /* StartScreenViewController.swift */; };
+		0991DDC2292FA32C0068F517 /* TopFlopTitle.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0991DDC1292FA32C0068F517 /* TopFlopTitle.xib */; };
+		0991DDC4292FA44F0068F517 /* TopFlopTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0991DDC3292FA44F0068F517 /* TopFlopTitle.swift */; };
 		09C3DDD4292BEAA600E37626 /* SmallWhiteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C3DDD3292BEAA600E37626 /* SmallWhiteView.swift */; };
 		09E8D377292D2BAE00DD70F1 /* ChooseQuestion.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09E8D376292D2BAE00DD70F1 /* ChooseQuestion.storyboard */; };
 		09E8D379292D2BC100DD70F1 /* ChooseQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E8D378292D2BC100DD70F1 /* ChooseQuestionViewController.swift */; };
@@ -57,6 +59,8 @@
 		098EA1132913CCA500841334 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0991DDBC292EA0390068F517 /* StartScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StartScreen.storyboard; sourceTree = "<group>"; };
 		0991DDBE292EA0A80068F517 /* StartScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenViewController.swift; sourceTree = "<group>"; };
+		0991DDC1292FA32C0068F517 /* TopFlopTitle.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopFlopTitle.xib; sourceTree = "<group>"; };
+		0991DDC3292FA44F0068F517 /* TopFlopTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopFlopTitle.swift; sourceTree = "<group>"; };
 		09C3DDD3292BEAA600E37626 /* SmallWhiteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallWhiteView.swift; sourceTree = "<group>"; };
 		09E8D376292D2BAE00DD70F1 /* ChooseQuestion.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChooseQuestion.storyboard; sourceTree = "<group>"; };
 		09E8D378292D2BC100DD70F1 /* ChooseQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseQuestionViewController.swift; sourceTree = "<group>"; };
@@ -193,9 +197,19 @@
 			name = StartScreen;
 			sourceTree = "<group>";
 		};
+		0991DDC0292FA2C40068F517 /* TopFlopTitle */ = {
+			isa = PBXGroup;
+			children = (
+				0991DDC1292FA32C0068F517 /* TopFlopTitle.xib */,
+				0991DDC3292FA44F0068F517 /* TopFlopTitle.swift */,
+			);
+			path = TopFlopTitle;
+			sourceTree = "<group>";
+		};
 		09C3DDD2292BEA4E00E37626 /* ViewElements */ = {
 			isa = PBXGroup;
 			children = (
+				0991DDC0292FA2C40068F517 /* TopFlopTitle */,
 				09C3DDD3292BEAA600E37626 /* SmallWhiteView.swift */,
 			);
 			path = ViewElements;
@@ -278,6 +292,7 @@
 				098EA10F2913CCA500841334 /* Assets.xcassets in Resources */,
 				098602FF292E6E6E00164C8D /* RoundEnd.storyboard in Resources */,
 				09860306292E768000164C8D /* GameSetting.storyboard in Resources */,
+				0991DDC2292FA32C0068F517 /* TopFlopTitle.xib in Resources */,
 				098602FA292E623400164C8D /* Tutorial.storyboard in Resources */,
 				092D36462928061800AFED17 /* CheckResult.storyboard in Resources */,
 			);
@@ -293,6 +308,7 @@
 				098602F7292D417300164C8D /* FinishScoreViewController.swift in Sources */,
 				09E8D37B292D39E800DD70F1 /* Questions.swift in Sources */,
 				09860309292E865100164C8D /* PlayerNumberController.swift in Sources */,
+				0991DDC4292FA44F0068F517 /* TopFlopTitle.swift in Sources */,
 				092D364E2928106B00AFED17 /* AnswerCollectionViewCell.swift in Sources */,
 				09E8D379292D2BC100DD70F1 /* ChooseQuestionViewController.swift in Sources */,
 				09860301292E6E8900164C8D /* RoundEndViewController.swift in Sources */,

@@ -17,7 +17,7 @@ class PlayerNumberController: UIViewController {
 
         card.layer.cornerRadius = 20
         card.layer.borderWidth = 10
-        card.layer.borderColor = UIColor(red: 254/255.0, green: 91/255.0, blue: 144/255.0, alpha: 1.0).cgColor
+        card.layer.borderColor = UIColor(named: "PrimaryColor")?.cgColor
         card.setTitle("Игрок 1", for: .normal)
         card.titleLabel?.font = UIFont(name: "Helvetica", size: 50)
             // Do any additional setup after loading the view.
