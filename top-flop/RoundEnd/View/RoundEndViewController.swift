@@ -33,25 +33,16 @@ class RoundEndViewController: UIViewController {
     
     @IBAction func endRound(_ sender: Any) {
         presenter?.stopCountdown()
-        let storyboard = UIStoryboard(name: "CheckResult", bundle: nil)
-        let vc = storyboard.instantiateViewController(identifier: "CheckResult")
-        self.navigationController?.setViewControllers([vc], animated: false)
-        navigateOnNext()
     }
     
     func navigateOnNext() {
         let storyboard = UIStoryboard(name: "CheckResult", bundle: nil)
         let vc = storyboard.instantiateViewController(identifier: "CheckResult")
         self.navigationController?.setViewControllers([vc], animated: false)
-//        let vc = RoundEndAssemble.assembly() //TODO: ИЗМЕНИТЬ
-//        self.navigationController?.setViewControllers([vc], animated: false)
     }
     
-    func updateLabels(roundT: Int) {
-        let seconds = roundT % 60
-        let fullSeconds = String(seconds / 10) + String(seconds % 10)
-        let title = NSAttributedString(string: "\(roundT / 60):\(fullSeconds)", attributes: strokeTextAttributes)
+    func updateLabels(timeLeft: String) {
+        let title = NSAttributedString(string: timeLeft, attributes: strokeTextAttributes)
         time.attributedText = title
     }
-    
 }

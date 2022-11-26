@@ -52,12 +52,11 @@ extension ChooseQuestionViewController: UICollectionViewDelegate
             
             let vc = RoundEndAssemble.assembly()
             self.navigationController?.setViewControllers([vc], animated: false)
-            
         })
         
         self.present(alert, animated: true, completion: {
-                let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.dismissAlertController))
-                alert.view.superview?.subviews[0].addGestureRecognizer(tapGesture)
+            let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.dismissAlertController))
+            alert.view.superview?.subviews[0].addGestureRecognizer(tapGesture)
         })
         
     }

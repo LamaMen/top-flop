@@ -19,7 +19,15 @@ class RoundEndPresenter {
     
     func onLoad() {
         timeLeft = SettingsStorage.roundTime * 60
-        view.updateLabels(roundT: timeLeft)
+        setTimeLeft(timeLeft: timeLeft)
+    }
+    
+    func setTimeLeft(timeLeft: Int) {
+        let seconds = timeLeft % 60
+        let fullSeconds = String(seconds / 10) + String(seconds % 10)
+        let timeFormatted = "\(timeLeft / 60):\(fullSeconds)"
+        
+        view.updateLabels(timeLeft: timeFormatted)
     }
     
     func startCountdown() {
@@ -29,15 +37,14 @@ class RoundEndPresenter {
     func stopCountdown() {
         timer?.invalidate()
         timer = nil
+        view.navigateOnNext()
     }
     
     @objc func onTimerFires () {
         timeLeft -= 1
-        view.updateLabels(roundT: timeLeft)
+        setTimeLeft(timeLeft: timeLeft)
         if timeLeft <= 0 {
-            timer?.invalidate()
-            timer = nil
-            view.navigateOnNext()
+            stopCountdown()
         }
     }
 }
