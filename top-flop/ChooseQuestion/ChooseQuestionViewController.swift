@@ -50,8 +50,7 @@ extension ChooseQuestionViewController: UICollectionViewDelegate
         alert.view.tintColor = UIColor.systemPink
         alert.addAction(UIAlertAction(title: "Начать игру", style: .default){_ in
             
-            let storyboard = UIStoryboard(name: "RoundEnd", bundle: nil)
-            let vc = storyboard.instantiateViewController(identifier: "RoundEnd")
+            let vc = RoundEndAssemble.assembly()
             self.navigationController?.setViewControllers([vc], animated: false)
             
         })

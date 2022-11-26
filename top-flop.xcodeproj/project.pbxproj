@@ -33,6 +33,9 @@
 		09ACD3E829324ACF0066A924 /* GameSettingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09ACD3E729324ACF0066A924 /* GameSettingPresenter.swift */; };
 		09ACD3EA29324BB10066A924 /* GameSettingAssemble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09ACD3E929324BB10066A924 /* GameSettingAssemble.swift */; };
 		09ACD3EE29324F790066A924 /* GameSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09ACD3ED29324F790066A924 /* GameSetting.swift */; };
+		09ACD3F229326CAE0066A924 /* RoundEndAssemble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09ACD3F129326CAE0066A924 /* RoundEndAssemble.swift */; };
+		09ACD3F529326E670066A924 /* TutorialAssemble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09ACD3F429326E670066A924 /* TutorialAssemble.swift */; };
+		09ACD3F82932739C0066A924 /* RoundEndPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09ACD3F72932739C0066A924 /* RoundEndPresenter.swift */; };
 		09C3DDD4292BEAA600E37626 /* SmallWhiteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C3DDD3292BEAA600E37626 /* SmallWhiteView.swift */; };
 		09E8D377292D2BAE00DD70F1 /* ChooseQuestion.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09E8D376292D2BAE00DD70F1 /* ChooseQuestion.storyboard */; };
 		09E8D379292D2BC100DD70F1 /* ChooseQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E8D378292D2BC100DD70F1 /* ChooseQuestionViewController.swift */; };
@@ -69,6 +72,9 @@
 		09ACD3E729324ACF0066A924 /* GameSettingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSettingPresenter.swift; sourceTree = "<group>"; };
 		09ACD3E929324BB10066A924 /* GameSettingAssemble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSettingAssemble.swift; sourceTree = "<group>"; };
 		09ACD3ED29324F790066A924 /* GameSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSetting.swift; sourceTree = "<group>"; };
+		09ACD3F129326CAE0066A924 /* RoundEndAssemble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundEndAssemble.swift; sourceTree = "<group>"; };
+		09ACD3F429326E670066A924 /* TutorialAssemble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialAssemble.swift; sourceTree = "<group>"; };
+		09ACD3F72932739C0066A924 /* RoundEndPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundEndPresenter.swift; sourceTree = "<group>"; };
 		09C3DDD3292BEAA600E37626 /* SmallWhiteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallWhiteView.swift; sourceTree = "<group>"; };
 		09E8D376292D2BAE00DD70F1 /* ChooseQuestion.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChooseQuestion.storyboard; sourceTree = "<group>"; };
 		09E8D378292D2BC100DD70F1 /* ChooseQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseQuestionViewController.swift; sourceTree = "<group>"; };
@@ -126,8 +132,8 @@
 		098602F8292E621000164C8D /* Tutorial */ = {
 			isa = PBXGroup;
 			children = (
-				098602F9292E623400164C8D /* Tutorial.storyboard */,
-				098602FB292E624B00164C8D /* TutorialViewController.swift */,
+				09ACD3F329326E4A0066A924 /* View */,
+				09ACD3F429326E670066A924 /* TutorialAssemble.swift */,
 			);
 			path = Tutorial;
 			sourceTree = "<group>";
@@ -135,8 +141,9 @@
 		098602FD292E6E5500164C8D /* RoundEnd */ = {
 			isa = PBXGroup;
 			children = (
-				098602FE292E6E6E00164C8D /* RoundEnd.storyboard */,
-				09860300292E6E8900164C8D /* RoundEndViewController.swift */,
+				09ACD3EF29326C780066A924 /* View */,
+				09ACD3F62932737F0066A924 /* Presenter */,
+				09ACD3F129326CAE0066A924 /* RoundEndAssemble.swift */,
 			);
 			path = RoundEnd;
 			sourceTree = "<group>";
@@ -242,6 +249,32 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		09ACD3EF29326C780066A924 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				09860300292E6E8900164C8D /* RoundEndViewController.swift */,
+				098602FE292E6E6E00164C8D /* RoundEnd.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		09ACD3F329326E4A0066A924 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				098602F9292E623400164C8D /* Tutorial.storyboard */,
+				098602FB292E624B00164C8D /* TutorialViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		09ACD3F62932737F0066A924 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				09ACD3F72932739C0066A924 /* RoundEndPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		09C3DDD2292BEA4E00E37626 /* ViewElements */ = {
 			isa = PBXGroup;
 			children = (
@@ -344,6 +377,7 @@
 				098602F7292D417300164C8D /* FinishScoreViewController.swift in Sources */,
 				09E8D37B292D39E800DD70F1 /* Questions.swift in Sources */,
 				09860309292E865100164C8D /* PlayerNumberController.swift in Sources */,
+				09ACD3F529326E670066A924 /* TutorialAssemble.swift in Sources */,
 				09ACD3EA29324BB10066A924 /* GameSettingAssemble.swift in Sources */,
 				09ACD3EE29324F790066A924 /* GameSetting.swift in Sources */,
 				09ACD3E4293242530066A924 /* SettingsStorage.swift in Sources */,
@@ -356,10 +390,12 @@
 				09860304292E765F00164C8D /* GameSettingController.swift in Sources */,
 				09ACD3E829324ACF0066A924 /* GameSettingPresenter.swift in Sources */,
 				0991DDBF292EA0A80068F517 /* StartScreenViewController.swift in Sources */,
+				09ACD3F229326CAE0066A924 /* RoundEndAssemble.swift in Sources */,
 				09E8D37D292D3A5300DD70F1 /* QuestionViewCell.swift in Sources */,
 				092D36512928124A00AFED17 /* Answer.swift in Sources */,
 				092D36482928077100AFED17 /* CheckResultViewController.swift in Sources */,
 				098602FC292E624B00164C8D /* TutorialViewController.swift in Sources */,
+				09ACD3F82932739C0066A924 /* RoundEndPresenter.swift in Sources */,
 				098EA1082913CCA400841334 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
