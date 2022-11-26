@@ -11,15 +11,11 @@ class StartScreenViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func playGame(_ sender: Any) {
-        let storyboard = UIStoryboard(name: "GameSetting", bundle: nil)
-        let vc = storyboard.instantiateViewController(identifier: "GameSetting")
-//        let storyboard = UIStoryboard(name: "RoundEnd", bundle: nil)
-//        let vc = storyboard.instantiateViewController(identifier: "RoundEnd")
+        // Создаем контроллер и переходим к нему
+        let vc = GameSettingAssemble.assembly()
         self.navigationController?.pushViewController(vc, animated: false)
     }
     

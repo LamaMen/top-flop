@@ -14,6 +14,9 @@ class PlayerNumberController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        print(SettingsStorage.roundTime)
+        print(SettingsStorage.numOfPlayers)
 
         card.layer.cornerRadius = 20
         card.layer.borderWidth = 10

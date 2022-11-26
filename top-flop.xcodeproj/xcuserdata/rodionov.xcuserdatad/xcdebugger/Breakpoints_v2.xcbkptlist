@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "A1A34281-F540-42B1-B62D-DCD4E9B0C2C9"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CBD0A0EE-846D-408C-9B5D-58404AC8E106"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "top-flop/GameSetting/View/GameSettingController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "GameSettingController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "CBD0A0EE-846D-408C-9B5D-58404AC8E106 - b308bf98345fa2a2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "top_flop.GameSettingController.__allocating_init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; top_flop.GameSettingController"
+                  moduleName = "top-flop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rodionov/developer/swift/top-flop/top-flop/GameSetting/View/GameSettingController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "CBD0A0EE-846D-408C-9B5D-58404AC8E106 - f5367412c3130386"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "top_flop.GameSettingController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; top_flop.GameSettingController"
+                  moduleName = "top-flop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rodionov/developer/swift/top-flop/top-flop/GameSetting/View/GameSettingController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "104">
+               </Location>
+               <Location
+                  uuid = "CBD0A0EE-846D-408C-9B5D-58404AC8E106 - dca80e3fa47be41b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "top_flop.GameSettingController.__allocating_init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;top_flop.GameSettingController&gt;"
+                  moduleName = "top-flop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rodionov/developer/swift/top-flop/top-flop/GameSetting/View/GameSettingController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "CBD0A0EE-846D-408C-9B5D-58404AC8E106 - 1df0ccd26647eb89"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "top_flop.GameSettingController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;top_flop.GameSettingController&gt;"
+                  moduleName = "top-flop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rodionov/developer/swift/top-flop/top-flop/GameSetting/View/GameSettingController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "80">
+               </Location>
+               <Location
+                  uuid = "CBD0A0EE-846D-408C-9B5D-58404AC8E106 - 4dc73691d3a0116"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "top_flop.GameSettingController.__deallocating_deinit"
+                  moduleName = "top-flop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rodionov/developer/swift/top-flop/top-flop/GameSetting/View/GameSettingController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E24D7086-814B-4D0F-A564-0542C90D6EF5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "top-flop/GameSetting/Model/GameSetting.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "9"
+            endingLineNumber = "9"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "E24D7086-814B-4D0F-A564-0542C90D6EF5 - 606c0175e3756418"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "top_flop.GameSetting.deinit"
+                  moduleName = "top-flop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rodionov/developer/swift/top-flop/top-flop/GameSetting/Model/GameSetting.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  uuid = "E24D7086-814B-4D0F-A564-0542C90D6EF5 - c57875bd923a4e75"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "top_flop.GameSetting.__deallocating_deinit"
+                  moduleName = "top-flop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rodionov/developer/swift/top-flop/top-flop/GameSetting/Model/GameSetting.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "937B4107-B23C-4E5C-BA71-8E3C47C610E1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "top-flop/GameSetting/Model/SettingsStorage.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "numOfPlayers"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
