@@ -11,12 +11,11 @@ import UIKit
 final class PlayerNumberAssemble {
     static func assemble() -> UIViewController {
         let storyboard = UIStoryboard(name: "PlayerNumber", bundle: nil)
-        let viewController = storyboard.instantiateViewController(identifier: "PlayerNumber") as PlayerNumberController?
+        let viewController = storyboard.instantiateViewController(identifier: "PlayerNumber") as! PlayerNumberController
         
-        let presenter = PlayerNumberPresenter(view: viewController!)
+        let presenter = PlayerNumberPresenter(view: viewController)
+        viewController.presenter = presenter
         
-        viewController?.presenter = presenter
-        
-        return viewController!
+        return viewController
     }
 }

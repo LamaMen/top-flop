@@ -36,8 +36,7 @@ class RoundEndViewController: UIViewController {
     }
     
     func navigateOnNext() {
-        let storyboard = UIStoryboard(name: "CheckResult", bundle: nil)
-        let vc = storyboard.instantiateViewController(identifier: "CheckResult")
+        let vc = CheckResultAssemble.assemble()
         self.navigationController?.setViewControllers([vc], animated: false)
     }
     

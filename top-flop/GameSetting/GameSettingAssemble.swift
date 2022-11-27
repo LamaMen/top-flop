@@ -14,14 +14,14 @@ final class GameSettingAssemble {
     static func assembly() -> UIViewController {
         // Создаем контроллер
         let storyboard = UIStoryboard(name: "GameSetting", bundle: nil)
-        let viewController = storyboard.instantiateViewController(identifier: "GameSetting") as GameSettingController?
+        let viewController = storyboard.instantiateViewController(identifier: "GameSetting") as! GameSettingController
         
         // Создаем презентер
-        let presenter = GameSettingPresenter(view: viewController!)
+        let presenter = GameSettingPresenter(view: viewController)
     
         // Связываем их
-        viewController?.presenter = presenter
+        viewController.presenter = presenter
         
-        return viewController!
+        return viewController
     }
 }

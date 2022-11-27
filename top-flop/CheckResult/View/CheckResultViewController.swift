@@ -8,13 +8,19 @@
 import UIKit
 
 class CheckResultViewController: UIViewController {
+    var presenter: CheckResultPresenter?
 
     @IBOutlet weak var answersView: UICollectionView!
-    @IBOutlet weak var messageBox: UIView!
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var currentPlayer: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!
+    
+    private var answers: [Answer] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
+        presenter?.loadAnswers()
         
         answersView.dataSource = self
         answersView.delegate = self
@@ -23,7 +29,44 @@ class CheckResultViewController: UIViewController {
     
     private func setupViews() {
         answersView.backgroundColor = UIColor.clear
-//        messageBox.layer.cornerRadius = 28
+    }
+}
+
+extension CheckResultViewController: CheckResultView {
+    func initialSetup() {
+        setCurrentPlayer(number: 1)
+        imageView.isHidden = true
+        titleLabel.text = ""
+    }
+    
+    func rightAnswer(newPlayer: Int) {
+        imageView.isHidden = false
+        imageView.image = UIImage(named: "HappyCat")
+        titleLabel.text = "ВСЁ ТАК!"
+        setCurrentPlayer(number: newPlayer)
+    }
+    
+    func wrongAnswer() {
+        imageView.isHidden = false
+        let image = UIImage(named: "SurprisedCat")
+        imageView.image = image
+        titleLabel.text = "ПОПРОБУЙ СНОВА"
+    }
+    
+    func updateAnswers(answers: [Answer]) {
+        self.answers = answers
+        answersView.reloadData()
+    }
+    
+    
+    func nextScreen() {
+        let storyboard = UIStoryboard(name: "FinishScore", bundle: nil)
+        let vc = storyboard.instantiateViewController(identifier: "FinishScore")
+        self.navigationController?.setViewControllers([vc], animated: false)
+    }
+    
+    private func setCurrentPlayer(number: Int) {
+        currentPlayer.text = "У КАКОГО ИГРОКА КАРТА С ЧИСЛОМ \(number)?"
     }
 }
 
@@ -53,8 +96,6 @@ extension CheckResultViewController: UICollectionViewDelegateFlowLayout {
 extension CheckResultViewController: UICollectionViewDelegate
 {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let storyboard = UIStoryboard(name: "FinishScore", bundle: nil)
-        let vc = storyboard.instantiateViewController(identifier: "FinishScore")
-        self.navigationController?.setViewControllers([vc], animated: false)
+        presenter?.onAnswerSelected(index: indexPath.row)
     }
 }

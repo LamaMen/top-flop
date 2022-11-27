@@ -9,17 +9,5 @@ import Foundation
 
 struct Answer {
     let number: String
-    let isSelected: Bool
+    var isSelected: Bool
 }
-
-let answers: [Answer] = [
-    Answer(number: "1", isSelected: true),
-    Answer(number: "2", isSelected: false),
-    Answer(number: "3", isSelected: true),
-    Answer(number: "4", isSelected: false),
-    Answer(number: "5", isSelected: false),
-    Answer(number: "6", isSelected: false),
-    Answer(number: "7", isSelected: true),
-    Answer(number: "8", isSelected: false),
-    Answer(number: "9", isSelected: true),
-]

@@ -39,6 +39,8 @@
 		09ACD3FD2932A0CA0066A924 /* PlayerNumberPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09ACD3FC2932A0CA0066A924 /* PlayerNumberPresenter.swift */; };
 		09ACD3FF2932A2420066A924 /* PlayerNumberStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09ACD3FE2932A2420066A924 /* PlayerNumberStorage.swift */; };
 		09ACD4012932A6BE0066A924 /* PlayerNumberAssemble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09ACD4002932A6BE0066A924 /* PlayerNumberAssemble.swift */; };
+		09ACD4062933D3230066A924 /* CheckResultPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09ACD4052933D3230066A924 /* CheckResultPresenter.swift */; };
+		09ACD4082933D3A80066A924 /* CheckResultAssemble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09ACD4072933D3A80066A924 /* CheckResultAssemble.swift */; };
 		09C3DDD4292BEAA600E37626 /* SmallWhiteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C3DDD3292BEAA600E37626 /* SmallWhiteView.swift */; };
 		09E8D377292D2BAE00DD70F1 /* ChooseQuestion.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09E8D376292D2BAE00DD70F1 /* ChooseQuestion.storyboard */; };
 		09E8D379292D2BC100DD70F1 /* ChooseQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E8D378292D2BC100DD70F1 /* ChooseQuestionViewController.swift */; };
@@ -81,6 +83,8 @@
 		09ACD3FC2932A0CA0066A924 /* PlayerNumberPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerNumberPresenter.swift; sourceTree = "<group>"; };
 		09ACD3FE2932A2420066A924 /* PlayerNumberStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerNumberStorage.swift; sourceTree = "<group>"; };
 		09ACD4002932A6BE0066A924 /* PlayerNumberAssemble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerNumberAssemble.swift; sourceTree = "<group>"; };
+		09ACD4052933D3230066A924 /* CheckResultPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckResultPresenter.swift; sourceTree = "<group>"; };
+		09ACD4072933D3A80066A924 /* CheckResultAssemble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckResultAssemble.swift; sourceTree = "<group>"; };
 		09C3DDD3292BEAA600E37626 /* SmallWhiteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallWhiteView.swift; sourceTree = "<group>"; };
 		09E8D376292D2BAE00DD70F1 /* ChooseQuestion.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChooseQuestion.storyboard; sourceTree = "<group>"; };
 		09E8D378292D2BC100DD70F1 /* ChooseQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseQuestionViewController.swift; sourceTree = "<group>"; };
@@ -102,8 +106,10 @@
 		092D3644292805BC00AFED17 /* CheckResult */ = {
 			isa = PBXGroup;
 			children = (
+				09ACD4042933D30B0066A924 /* Presenter */,
 				092D364F2928123B00AFED17 /* Model */,
 				092D364929280F9F00AFED17 /* View */,
+				09ACD4072933D3A80066A924 /* CheckResultAssemble.swift */,
 			);
 			path = CheckResult;
 			sourceTree = "<group>";
@@ -308,6 +314,14 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
+		09ACD4042933D30B0066A924 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				09ACD4052933D3230066A924 /* CheckResultPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		09C3DDD2292BEA4E00E37626 /* ViewElements */ = {
 			isa = PBXGroup;
 			children = (
@@ -424,10 +438,12 @@
 				09860304292E765F00164C8D /* GameSettingController.swift in Sources */,
 				09ACD3E829324ACF0066A924 /* GameSettingPresenter.swift in Sources */,
 				0991DDBF292EA0A80068F517 /* StartScreenViewController.swift in Sources */,
+				09ACD4082933D3A80066A924 /* CheckResultAssemble.swift in Sources */,
 				09ACD3F229326CAE0066A924 /* RoundEndAssemble.swift in Sources */,
 				09ACD3FF2932A2420066A924 /* PlayerNumberStorage.swift in Sources */,
 				09E8D37D292D3A5300DD70F1 /* QuestionViewCell.swift in Sources */,
 				092D36512928124A00AFED17 /* Answer.swift in Sources */,
+				09ACD4062933D3230066A924 /* CheckResultPresenter.swift in Sources */,
 				092D36482928077100AFED17 /* CheckResultViewController.swift in Sources */,
 				09ACD3FD2932A0CA0066A924 /* PlayerNumberPresenter.swift in Sources */,
 				098602FC292E624B00164C8D /* TutorialViewController.swift in Sources */,

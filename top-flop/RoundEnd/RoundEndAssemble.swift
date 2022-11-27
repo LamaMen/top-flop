@@ -14,14 +14,14 @@ final class RoundEndAssemble {
     static func assembly() -> UIViewController {
         // Создаем контроллер
         let storyboard = UIStoryboard(name: "RoundEnd", bundle: nil)
-        let viewController = storyboard.instantiateViewController(identifier: "RoundEnd") as RoundEndViewController?
+        let viewController = storyboard.instantiateViewController(identifier: "RoundEnd") as! RoundEndViewController
         
         // Создаем презентер
-        let presenter = RoundEndPresenter(view: viewController!)
+        let presenter = RoundEndPresenter(view: viewController)
 
         // Связываем их
-        viewController?.presenter = presenter
+        viewController.presenter = presenter
         
-        return viewController!
+        return viewController
     }
 }
