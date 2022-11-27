@@ -8,46 +8,44 @@
 import UIKit
 
 class PlayerNumberController: UIViewController {
+    var presenter: PlayerNumberPresenter?
     
     @IBOutlet weak var card: UIButton!
-    var open: Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print(SettingsStorage.roundTime)
-        print(SettingsStorage.numOfPlayers)
-
+        presenter?.onLoad()
+        
         card.layer.cornerRadius = 20
         card.layer.borderWidth = 10
         card.layer.borderColor = UIColor(named: "PrimaryColor")?.cgColor
         card.setTitle("Игрок 1", for: .normal)
         card.titleLabel?.font = UIFont(name: "Helvetica", size: 50)
-            // Do any additional setup after loading the view.
     }
         
 
-    @IBAction func cardFlip(_ sender: Any) {
-        if (open) {
+    @IBAction func cardTap(_ sender: Any) {
+        if (presenter?.nextCard(card: card) == false) {
             let storyboard = UIStoryboard(name: "ChooseQuestion", bundle: nil)
             let vc = storyboard.instantiateViewController(identifier: "ChooseQuestion")
+//            let vc = ChooseQuestionAssemble.assembly()
             self.navigationController?.pushViewController(vc, animated: false)
-            
-//            open = false
-//
-//            card.setTitle("Игрок 1", for: .normal)
-//            card.titleLabel?.font = UIFont(name: "Helvetica", size: 50)
-//
-//            UIView.transition(with: card, duration: 0.4, options: .transitionFlipFromTop, animations: nil, completion: nil)
-        } else {
-            open = true
-            
-            card.setTitle("4", for: .normal)
-            card.titleLabel?.font = UIFont(name: "Helvetica", size: 90)
-                
-            UIView.transition(with: card, duration: 0.4, options: .transitionFlipFromLeft, animations: nil, completion: nil)
-
         }
+    }
+    
+    func openCard(number: Int) {
+        card.setTitle("\(number)", for: .normal)
+        card.titleLabel?.font = UIFont(name: "Helvetica", size: 90)
+        
+        UIView.transition(with: card, duration: 0.4, options: .transitionFlipFromLeft, animations: nil, completion: nil)
+    }
+    
+    func closeCard(number: Int) {
+        card.setTitle("Игрок \(number)", for: .normal)
+        card.titleLabel?.font = UIFont(name: "Helvetica", size: 50)
+
+        UIView.transition(with: card, duration: 0.4, options: .transitionFlipFromTop, animations: nil, completion: nil)
     }
     
 

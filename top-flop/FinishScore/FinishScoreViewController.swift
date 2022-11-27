@@ -22,8 +22,7 @@ class FinishScoreViewController: UIViewController {
     }
     
     @IBAction func newRound(_ sender: Any) {
-        let storyboard = UIStoryboard(name: "PlayerNumber", bundle: nil)
-        let vc = storyboard.instantiateViewController(identifier: "PlayerNumber")
+        let vc = PlayerNumberAssemble.assemble()
         self.navigationController?.setViewControllers([vc], animated: false)
     }
     

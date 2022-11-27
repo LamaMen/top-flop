@@ -8,6 +8,8 @@ class ChooseQuestionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        print(PlayerNumberStorage.getPlayerNumber(player: 1))
+        
         message.layer.cornerRadius = 28
         collectionView.dataSource = self
         collectionView.delegate = self

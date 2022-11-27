@@ -55,8 +55,7 @@ class GameSettingController: UIViewController {
     }
     
     @IBAction func startGame(_ sender: Any) {
-        let storyboard = UIStoryboard(name: "PlayerNumber", bundle: nil)
-        let vc = storyboard.instantiateViewController(identifier: "PlayerNumber")
+        let vc = PlayerNumberAssemble.assemble()
         self.navigationController?.pushViewController(vc, animated: false)
     }
     
