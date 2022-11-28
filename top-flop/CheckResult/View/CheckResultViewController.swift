@@ -60,8 +60,7 @@ extension CheckResultViewController: CheckResultView {
     
     
     func nextScreen() {
-        let storyboard = UIStoryboard(name: "FinishScore", bundle: nil)
-        let vc = storyboard.instantiateViewController(identifier: "FinishScore")
+        let vc = FinishScoreAssemble.assembly()
         self.navigationController?.setViewControllers([vc], animated: false)
     }
     

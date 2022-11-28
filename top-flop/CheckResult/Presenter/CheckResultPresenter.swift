@@ -35,6 +35,7 @@ class CheckResultPresenter {
         
         view.updateAnswers(answers: answers)
         view.initialSetup()
+        ScoreStorage.score = 0
     }
     
     func onAnswerSelected(index: Int) {
@@ -42,12 +43,15 @@ class CheckResultPresenter {
         let realNumber = PlayerNumberStorage.getPlayerNumber(player: player)
         
         if realNumber != currentNumber {
-            // REMOVE POINT
+            if ScoreStorage.score != 0 {
+                ScoreStorage.score -= 1
+            }
+            
             view.wrongAnswer()
             return
         }
         
-        // ADD POINT
+        ScoreStorage.score += 2
         answers[index].isSelected = true
         view.updateAnswers(answers: answers)
         currentNumber += 1

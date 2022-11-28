@@ -33,14 +33,14 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="QuestionViewCell" id="Ws3-SX-D7e" customClass="QuestionViewCell" customModule="top_flop" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="81.5" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="eNS-8j-5uF">
-                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="81.5" height="128"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pUo-sc-QiV">
-                                                    <rect key="frame" x="20" y="30" width="41.5" height="20.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pUo-sc-QiV">
+                                                    <rect key="frame" x="20" y="16" width="41.5" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -50,7 +50,7 @@
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="pUo-sc-QiV" secondAttribute="trailing" constant="20" id="3dl-TN-hd3"/>
                                                 <constraint firstItem="pUo-sc-QiV" firstAttribute="leading" secondItem="eNS-8j-5uF" secondAttribute="leading" constant="20" id="CVm-V7-CcT"/>
-                                                <constraint firstItem="pUo-sc-QiV" firstAttribute="top" secondItem="eNS-8j-5uF" secondAttribute="top" constant="30" id="D1Y-RQ-KCv"/>
+                                                <constraint firstItem="pUo-sc-QiV" firstAttribute="top" secondItem="eNS-8j-5uF" secondAttribute="top" constant="16" id="D1Y-RQ-KCv"/>
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <connections>
@@ -118,7 +118,7 @@
     <resources>
         <image name="Background" width="390" height="844"/>
         <namedColor name="PrimaryColor">
-            <color red="0.95294117647058818" green="0.29411764705882354" blue="0.56470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.95300000905990601" green="0.29399999976158142" blue="0.56499999761581421" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

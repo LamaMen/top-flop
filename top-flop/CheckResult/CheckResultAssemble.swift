@@ -8,7 +8,7 @@
 import UIKit
 
 class CheckResultAssemble {
-    static func assemble() -> UIViewController {
+    static func assembly() -> UIViewController {
         let storyboard = UIStoryboard(name: "CheckResult", bundle: nil)
         let viewController = storyboard.instantiateViewController(identifier: "CheckResult") as! CheckResultViewController
         

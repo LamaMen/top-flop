@@ -12,12 +12,16 @@ class FinishScoreViewController: UIViewController {
     @IBOutlet weak var message: UIView!
     @IBOutlet weak var score: UILabel!
     
+    var presenter: FinishScorePresenter?
+
     override func viewDidLoad() {
         super.viewDidLoad()
-    
         message.heightAnchor.constraint(equalToConstant: 400).isActive = true
         message.layer.cornerRadius = 28
-        let s = 3
+        presenter?.onLoad()
+    }
+    
+    func updateLabels(s: String) {
         score.text = "\(s)!"
     }
     
@@ -31,4 +35,5 @@ class FinishScoreViewController: UIViewController {
         let vc = storyboard.instantiateViewController(identifier: "StartScreen")
         self.navigationController?.setViewControllers([vc], animated: false)
     }
+    
 }

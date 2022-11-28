@@ -1,14 +1,17 @@
 import UIKit
+import FirebaseFirestore
 
 class ChooseQuestionViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var message: UIView!
     
+    var presenter: ChooseQuestionPresenter?
+    private var questions: [String] = []
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        print(PlayerNumberStorage.getPlayerNumber(player: 1))
+        presenter?.onLoad()
         
         message.layer.cornerRadius = 28
         collectionView.dataSource = self
@@ -16,7 +19,11 @@ class ChooseQuestionViewController: UIViewController {
         collectionView.collectionViewLayout = UICollectionViewFlowLayout()
         collectionView.backgroundColor = UIColor.clear
     }
-
+    
+    func updateQuestions(questions: [String]) {
+        self.questions = questions
+        collectionView.reloadData()
+    }
 }
 extension ChooseQuestionViewController: UICollectionViewDataSource  {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

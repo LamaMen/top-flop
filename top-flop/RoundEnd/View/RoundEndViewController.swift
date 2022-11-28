@@ -36,7 +36,7 @@ class RoundEndViewController: UIViewController {
     }
     
     func navigateOnNext() {
-        let vc = CheckResultAssemble.assemble()
+        let vc = CheckResultAssemble.assembly()
         self.navigationController?.setViewControllers([vc], animated: false)
     }
     
