@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Finish Score View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="FinishScore" id="Y6W-OH-hqX" customClass="FinishScoreViewController" customModule="top_flop" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="dSN-8y-Imu">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ObU-CA-Z44">
+                                <rect key="frame" x="0.0" y="496" width="414" height="400"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="БАЛЛЫ ЗА РАУНД" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zjM-6P-wtE">
+                                        <rect key="frame" x="64.5" y="30" width="285.5" height="38.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                        <color key="textColor" name="SecondaryColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gs9-eL-4k9">
+                                        <rect key="frame" x="176.5" y="88.5" width="61" height="90"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="90" id="PUH-cP-PSD"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="64"/>
+                                        <color key="textColor" name="PrimaryColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tkE-UI-Jv1">
+                                        <rect key="frame" x="72" y="188.5" width="270" height="75"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="270" id="F3K-PO-v5h"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="75" id="gNm-fe-cGm"/>
+                                            <constraint firstAttribute="height" constant="75" id="tJW-7N-NXz"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="К НОВОМУ ВЕДУЩЕМУ" cornerStyle="small">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
+                                            <color key="baseBackgroundColor" name="PrimaryColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="newRound:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="1E5-ai-Ao6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mz3-Vu-e0c">
+                                        <rect key="frame" x="72" y="273.5" width="270" height="75"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="75" id="Fc2-mf-0KL"/>
+                                            <constraint firstAttribute="height" constant="75" id="iUL-q6-79a"/>
+                                            <constraint firstAttribute="width" constant="270" id="rTk-PX-KaH"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="ЗАКОНЧИТЬ ИГРУ" cornerStyle="small">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
+                                            <color key="baseBackgroundColor" name="PrimaryColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="endGame:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="b64-ER-gOZ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="tkE-UI-Jv1" firstAttribute="top" secondItem="Gs9-eL-4k9" secondAttribute="bottom" constant="10" id="IQS-7X-KBT"/>
+                                    <constraint firstItem="mz3-Vu-e0c" firstAttribute="top" secondItem="tkE-UI-Jv1" secondAttribute="bottom" constant="10" id="JKw-5k-ims"/>
+                                    <constraint firstItem="Gs9-eL-4k9" firstAttribute="centerX" secondItem="ObU-CA-Z44" secondAttribute="centerX" id="JfR-jJ-SEd"/>
+                                    <constraint firstItem="mz3-Vu-e0c" firstAttribute="centerX" secondItem="ObU-CA-Z44" secondAttribute="centerX" id="KVc-Ha-ucM"/>
+                                    <constraint firstAttribute="height" constant="400" id="Pik-qq-LSW"/>
+                                    <constraint firstItem="zjM-6P-wtE" firstAttribute="top" secondItem="ObU-CA-Z44" secondAttribute="top" constant="30" id="RkK-Fz-Iyh"/>
+                                    <constraint firstItem="zjM-6P-wtE" firstAttribute="centerX" secondItem="ObU-CA-Z44" secondAttribute="centerX" id="Sxs-0c-ULO"/>
+                                    <constraint firstItem="tkE-UI-Jv1" firstAttribute="centerX" secondItem="ObU-CA-Z44" secondAttribute="centerX" id="mrC-dt-EnC"/>
+                                    <constraint firstItem="Gs9-eL-4k9" firstAttribute="top" secondItem="zjM-6P-wtE" secondAttribute="bottom" constant="20" id="y3a-cF-4HC"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Crg-zY-je3" customClass="TopFlopTitle" customModule="top_flop" customModuleProvider="target">
+                                <rect key="frame" x="67" y="116" width="240" height="128"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" name="PrimaryColor"/>
+                        <constraints>
+                            <constraint firstItem="Crg-zY-je3" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="0nw-Dy-l21"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ObU-CA-Z44" secondAttribute="trailing" id="3Wf-T8-GVI"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="dSN-8y-Imu" secondAttribute="trailing" id="4HQ-R3-4eS"/>
+                            <constraint firstItem="dSN-8y-Imu" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="EuI-yx-iJu"/>
+                            <constraint firstAttribute="bottom" secondItem="dSN-8y-Imu" secondAttribute="bottom" id="Kuh-3i-mhV"/>
+                            <constraint firstItem="dSN-8y-Imu" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="SQ4-Tt-Tkg"/>
+                            <constraint firstItem="ObU-CA-Z44" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="q4x-9D-mwX"/>
+                            <constraint firstAttribute="bottom" secondItem="ObU-CA-Z44" secondAttribute="bottom" id="tBP-3m-xb2"/>
+                            <constraint firstItem="Crg-zY-je3" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="50" id="ylS-3x-Sxl"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="message" destination="ObU-CA-Z44" id="QEE-yg-fdn"/>
+                        <outlet property="score" destination="Gs9-eL-4k9" id="o2M-NC-cW9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Background" width="390" height="844"/>
+        <namedColor name="PrimaryColor">
+            <color red="0.95300000905990601" green="0.29399999976158142" blue="0.56499999761581421" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="SecondaryColor">
+            <color red="1" green="0.6589999794960022" blue="0.25499999523162842" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tutorial View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="Tutorial" id="Y6W-OH-hqX" customClass="TutorialViewController" customModule="top_flop" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="h8L-z1-2vU">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HDr-0N-s1Q">
+                                <rect key="frame" x="0.0" y="284" width="414" height="606"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hK1-nK-nhs">
+                                        <rect key="frame" x="72" y="501" width="270" height="75"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="75" id="K9N-Uw-15a"/>
+                                            <constraint firstAttribute="width" constant="270" id="e6Z-DC-sgU"/>
+                                        </constraints>
+                                        <color key="tintColor" name="PrimaryColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="НАЗАД" cornerStyle="small">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
+                                            <color key="baseBackgroundColor" name="PrimaryColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="back:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Dy4-cZ-f3D"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ПРАВИЛА ИГРЫ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ciA-Vf-4zb">
+                                        <rect key="frame" x="106.5" y="35" width="201" height="34"/>
+                                        <fontDescription key="fontDescription" name="NotoSansOriya-Bold" family="Noto Sans Oriya" pointSize="24"/>
+                                        <color key="textColor" red="1" green="0.6588235294" blue="0.25490196079999999" alpha="0.8980392157" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eup-wv-XGw">
+                                        <rect key="frame" x="30" y="81" width="354" height="1136.5"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <mutableString key="text">Игрок с лучшим чувством юмора становится Капитаном в первом раунде (во втором раунде Капитаном станет игрок слева от него, и так далее). Все игроки, кроме Капитана, передают по кругу телефон, начиная с игрока слева от Капитана, чтобы получить номер на текущий раунд. После того как все игроки получили свой номер, телефон возвращается к Капитану. Ему необходимо выбрать ситуацию и озвучить её игрокам. Теперь время пошло! Пока время на таймере не закончилось, в любом порядке все игроки  должны озвучить свой вариант. Интенсивность ответа зависит от номера на карте (1 - критерий, от которого идут варианты; 9 - критерий, до которого идут варианты).
+Когда были озвучены все варианты, Капитан завершает раунд. Теперь ему необходимо отгадать порядок ответов, от наименьшего до наибольшего. Чтобы проверить свою догадку, ему необходимо нажать на игрока, у которого, он думает, карта с нужным номером (1 игрок - игрок слева от Капитана, и так далее). За каждый угаданы ответ Капитан получит балл, но каждая ошибка будет отнимать у него балл!
+Как только Капитан увидит свои баллы, можно переходить к новому раунду!</mutableString>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" name="NotoSansOriya" family="Noto Sans Oriya" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="hK1-nK-nhs" firstAttribute="centerX" secondItem="HDr-0N-s1Q" secondAttribute="centerX" id="2wB-rh-i1H"/>
+                                    <constraint firstItem="hK1-nK-nhs" firstAttribute="top" secondItem="Eup-wv-XGw" secondAttribute="bottom" constant="30" id="4iV-wB-QQa"/>
+                                    <constraint firstAttribute="trailing" secondItem="Eup-wv-XGw" secondAttribute="trailing" constant="30" id="P4V-dh-erd"/>
+                                    <constraint firstItem="Eup-wv-XGw" firstAttribute="leading" secondItem="HDr-0N-s1Q" secondAttribute="leading" constant="30" id="Rye-OT-5pz"/>
+                                    <constraint firstAttribute="bottom" secondItem="hK1-nK-nhs" secondAttribute="bottom" constant="30" id="Xhq-vx-MAJ"/>
+                                    <constraint firstItem="Eup-wv-XGw" firstAttribute="top" secondItem="ciA-Vf-4zb" secondAttribute="bottom" constant="12" id="fHP-R9-lf1"/>
+                                    <constraint firstItem="ciA-Vf-4zb" firstAttribute="top" secondItem="HDr-0N-s1Q" secondAttribute="top" constant="35" id="nvo-9D-pgK"/>
+                                    <constraint firstItem="ciA-Vf-4zb" firstAttribute="centerX" secondItem="HDr-0N-s1Q" secondAttribute="centerX" id="x6p-wd-1BA"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="28"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w6U-yE-I5H" customClass="TopFlopTitle" customModule="top_flop" customModuleProvider="target">
+                                <rect key="frame" x="65" y="79" width="240" height="128"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="HDr-0N-s1Q" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="1Ra-Eu-NPW"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="HDr-0N-s1Q" secondAttribute="bottom" constant="-28" id="8YA-QD-eq1"/>
+                            <constraint firstItem="h8L-z1-2vU" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="9Z6-Ad-omT"/>
+                            <constraint firstItem="h8L-z1-2vU" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Cqm-ZO-Oek"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="HDr-0N-s1Q" secondAttribute="trailing" id="GZl-zR-g7x"/>
+                            <constraint firstItem="HDr-0N-s1Q" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Qg3-QL-NjA"/>
+                            <constraint firstItem="HDr-0N-s1Q" firstAttribute="top" secondItem="w6U-yE-I5H" secondAttribute="bottom" constant="30" id="QpA-l4-niE"/>
+                            <constraint firstItem="w6U-yE-I5H" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="15" id="VVk-be-j7S"/>
+                            <constraint firstItem="w6U-yE-I5H" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="lgw-jd-jyg"/>
+                            <constraint firstItem="h8L-z1-2vU" firstAttribute="bottom" secondItem="5EZ-qb-Rvc" secondAttribute="bottom" id="mnU-nI-83P"/>
+                            <constraint firstItem="h8L-z1-2vU" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="oV6-5p-lRw"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="56.521739130434788" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Background" width="390" height="844"/>
+        <namedColor name="PrimaryColor">
+            <color red="0.95294117647058818" green="0.29411764705882354" blue="0.56470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
